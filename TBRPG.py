@@ -1,0 +1,65 @@
+import time
+import sys
+class bcolors:
+    BLACK = '\033[38;5;234m'
+    BLUE = '\033[38;5;21m'
+    BROWN = '\033[38;5;94m'
+    CYAN = '\033[38;5;51m'
+    GREEN = '\033[38;5;46m'
+    ORANGE = '\033[38;5;214m'
+    PURPLE = '\033[38;5;92m'
+    PINK = '\033[38;5;201m'
+    RED = '\033[38;5;196m'
+    TEAL = '\033[38;5;30m'
+    WHITE = '\033[38;5;231m'
+    YELLOW = '\033[38;5;226m'
+
+def characterDialogue(NAME, CLASS, TEXT, SPEED=.1):
+    #PRINTING MESSAGE
+    if CLASS == "BLACK":
+        print(f"{bcolors.BLACK} {NAME}:", end='')
+    elif CLASS == "BLUE":
+        print(f"{bcolors.BLUE} {NAME}:", end='')
+    elif CLASS == "BROWN":
+        print(f"{bcolors.BROWN} {NAME}:", end='')
+    elif CLASS == "CYAN":
+        print(f"{bcolors.CYAN} {NAME}:", end='')
+    elif CLASS == "GREEN":
+        print(f"{bcolors.GREEN} {NAME}:", end='')
+    elif CLASS == "ORANGE":
+        print(f"{bcolors.ORANGE} {NAME}:", end='')
+    elif CLASS == "PURPLE":
+        print(f"{bcolors.PURPLE} {NAME}:", end='')
+    elif CLASS == "PINK":
+        print(f"{bcolors.PINK} {NAME}:", end='')
+    elif CLASS == "RED":
+        print(f"{bcolors.RED} {NAME}:", end='')
+    elif CLASS == "TEAL":
+        print(f"{bcolors.TEAL} {NAME}:", end='')
+    elif CLASS == "WHITE":
+        print(f"{bcolors.WHITE} {NAME}:", end='')
+    elif CLASS == "YELLOW":
+        print(f"{bcolors.YELLOW} {NAME}:", end='')
+    print(' ', end='')
+
+    for CHAR in TEXT:
+        sys.stdout.write(f'{bcolors.WHITE}' + CHAR)
+        sys.stdout.flush()
+        time.sleep(0.1)
+
+    print("\n")
+
+characterDialogue("Test", "BLACK", "This is a test message")
+characterDialogue("Test", "BLUE", "This is a test message")
+characterDialogue("Test", "BROWN", "This is a test message")
+characterDialogue("Test", "CYAN", "This is a test message")
+characterDialogue("Test", "GREEN", "This is a test message")
+characterDialogue("Test", "ORANGE", "This is a test message")
+characterDialogue("Test", "PURPLE", "This is a test message")
+characterDialogue("Test", "PINK", "This is a test message")
+characterDialogue("Test", "RED", "This is a test message")
+characterDialogue("Test", "TEAL", "This is a test message")
+characterDialogue("Test", "WHITE", "This is a test message")
+characterDialogue("Test", "YELLOW", "This is a test message")
+
+time.sleep(8)
