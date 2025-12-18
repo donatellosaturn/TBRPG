@@ -13,8 +13,9 @@ class bcolors:
     TEAL = '\033[38;5;30m'
     WHITE = '\033[38;5;231m'
     YELLOW = '\033[38;5;226m'
+    MAGENTA = '\033[38;5;197m'
 
-def characterDialogue(NAME, CLASS, TEXT, SPEED=.1):
+def characterDialogue(NAME, CLASS, TEXT, SPEED=.02):
     #PRINTING MESSAGE
     if CLASS == "BLACK":
         print(f"{bcolors.BLACK} {NAME}:", end='')
@@ -40,12 +41,16 @@ def characterDialogue(NAME, CLASS, TEXT, SPEED=.1):
         print(f"{bcolors.WHITE} {NAME}:", end='')
     elif CLASS == "YELLOW":
         print(f"{bcolors.YELLOW} {NAME}:", end='')
+    elif CLASS == "MAGENTA":
+        print(f"{bcolors.MAGENTA} {NAME}:", end='')
     print(' ', end='')
 
     for CHAR in TEXT:
         sys.stdout.write(f'{bcolors.WHITE}' + CHAR)
         sys.stdout.flush()
-        time.sleep(0.1)
+        time.sleep(SPEED)
+
+    time.sleep(1)
 
     print("\n")
 
@@ -61,5 +66,6 @@ characterDialogue("JADEN", "RED", "This is a test message")
 characterDialogue("CASEY", "TEAL", "This is a test message")
 characterDialogue("EVEREST", "WHITE", "This is a test message")
 characterDialogue("JAYE", "YELLOW", "This is a test message")
+characterDialogue("(you)", "MAGENTA", "This is a test message")
 
 time.sleep(8)
