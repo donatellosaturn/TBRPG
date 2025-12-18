@@ -1,7 +1,7 @@
 import time
 import sys
 class bcolors:
-    BLACK = '\033[38;5;234m'
+    BLACK = '\033[38;5;238m'
     BLUE = '\033[38;5;21m'
     BROWN = '\033[38;5;94m'
     CYAN = '\033[38;5;51m'
@@ -49,17 +49,17 @@ def characterDialogue(NAME, CLASS, TEXT, SPEED=.1):
 
     print("\n")
 
-characterDialogue("Test", "BLACK", "This is a test message")
-characterDialogue("Test", "BLUE", "This is a test message")
-characterDialogue("Test", "BROWN", "This is a test message")
-characterDialogue("Test", "CYAN", "This is a test message")
-characterDialogue("Test", "GREEN", "This is a test message")
-characterDialogue("Test", "ORANGE", "This is a test message")
-characterDialogue("Test", "PURPLE", "This is a test message")
-characterDialogue("Test", "PINK", "This is a test message")
-characterDialogue("Test", "RED", "This is a test message")
-characterDialogue("Test", "TEAL", "This is a test message")
-characterDialogue("Test", "WHITE", "This is a test message")
-characterDialogue("Test", "YELLOW", "This is a test message")
+characterDialogue("???", "BLACK", "This is a test message")
+characterDialogue("SCOT", "BLUE", "This is a test message")
+characterDialogue("BRYNNE", "BROWN", "This is a test message")
+characterDialogue("MILO", "CYAN", "This is a test message")
+characterDialogue("GARRETT", "GREEN", "This is a test message")
+characterDialogue("AMITY", "ORANGE", "This is a test message")
+characterDialogue("DAKOTA", "PURPLE", "This is a test message")
+characterDialogue("HEATHER", "PINK", "This is a test message")
+characterDialogue("JADEN", "RED", "This is a test message")
+characterDialogue("CASEY", "TEAL", "This is a test message")
+characterDialogue("EVEREST", "WHITE", "This is a test message")
+characterDialogue("JAYE", "YELLOW", "This is a test message")
 
 time.sleep(8)
