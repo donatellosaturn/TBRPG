@@ -1,5 +1,6 @@
 import time
 import sys
+import os
 class bcolors:
     BLACK = '\033[38;5;238m'
     BLUE = '\033[38;5;21m'
@@ -15,7 +16,7 @@ class bcolors:
     YELLOW = '\033[38;5;226m'
     MAGENTA = '\033[38;5;197m'
 
-def characterDialogue(NAME, CLASS, TEXT, SPEED=.02):
+def characterDialogue(NAME, CLASS, TEXT, SPEED=.02, REST=1):
     #PRINTING MESSAGE
     if CLASS == "BLACK":
         print(f"{bcolors.BLACK} {NAME}:", end='')
@@ -50,22 +51,82 @@ def characterDialogue(NAME, CLASS, TEXT, SPEED=.02):
         sys.stdout.flush()
         time.sleep(SPEED)
 
-    time.sleep(1)
+    time.sleep(REST)
 
     print("\n")
 
-characterDialogue("???", "BLACK", "This is a test message")
-characterDialogue("SCOT", "BLUE", "This is a test message")
-characterDialogue("BRYNNE", "BROWN", "This is a test message")
-characterDialogue("MILO", "CYAN", "This is a test message")
-characterDialogue("GARRETT", "GREEN", "This is a test message")
-characterDialogue("AMITY", "ORANGE", "This is a test message")
-characterDialogue("DAKOTA", "PURPLE", "This is a test message")
-characterDialogue("HEATHER", "PINK", "This is a test message")
-characterDialogue("JADEN", "RED", "This is a test message")
-characterDialogue("CASEY", "TEAL", "This is a test message")
-characterDialogue("EVEREST", "WHITE", "This is a test message")
-characterDialogue("JAYE", "YELLOW", "This is a test message")
-characterDialogue("(you)", "MAGENTA", "This is a test message")
+def reference():
+    characterDialogue("ZACHARY", "BLUE", "This is a test message")
+    characterDialogue("BRYNNE", "BROWN", "This is a test message")
+    characterDialogue("MILO", "CYAN", "This is a test message")
+    characterDialogue("GARRETT", "GREEN", "This is a test message")
+    characterDialogue("AMITY", "ORANGE", "This is a test message")
+    characterDialogue("DAKOTA", "PURPLE", "This is a test message")
+    characterDialogue("HEATHER", "PINK", "This is a test message")
+    characterDialogue("AARON", "RED", "This is a test message")
+    characterDialogue("CASEY", "TEAL", "This is a test message")
+    characterDialogue("EVEREST", "WHITE", "This is a test message")
+    characterDialogue("SOPH", "YELLOW", "This is a test message")
+    characterDialogue("[SYSTEM]", "WHITE", "This is a test message")
 
-time.sleep(8)
+
+time.sleep(3)
+
+#[EPISODE LIST]
+#----------
+#and so it begins.
+
+def Episode(episodeNumber):
+    if episodeNumber == 1:
+        #EPISODE ONE
+        characterDialogue("[SYSTEM]", "WHITE", "[18:09] STARTUP: Audio Systems enabled", 0, 2)
+        characterDialogue("???", "BLACK", "...")
+        characterDialogue("???", "BLACK", "...I hope this works.", REST=2)
+        time.sleep(3)
+        characterDialogue("???", "BLACK", "Sending a test message... now.", REST=0)
+        characterDialogue("[SYSTEM]", "WHITE", "[18:10] DEBUG: Automated Message sent from (125.52.102.8)", 0, 2)
+        characterDialogue("???", "BLACK", "Holy... shit.", REST=2)
+        characterDialogue("???", "BLACK", "It actually...")
+        characterDialogue("???", "BLACK", "Okay... okay... holy shit.")
+        characterDialogue("???", "BLACK", "[AUDIBLE SIGH]")
+        characterDialogue("???", "BLACK", "Alright.")
+        characterDialogue("???", "BLACK", "Turning on its infrastructure... now.")
+        loop = 10
+        while loop != 0:
+            loop -= 1
+            characterDialogue("[SYSTEM]", "YELLOW", "[18:11] WARNING: Unknown Diagnostic Error Occured", 0, 0)
+        characterDialogue("[SYSTEM]", "RED", "[18:11] ERROR: Ocular System is damaged. Continue?", 0, 2)
+        characterDialogue("???", "BLACK", "...")
+        characterDialogue("???", "BLACK", "...Diagnostic Error?")
+        characterDialogue("???", "BLACK", "I don't remember programming that in...")
+        characterDialogue("???", "BLACK", "...screw it. The ocular system isn't important anyway...")
+        characterDialogue("???", "BLACK", "Let me remotely enter in an error bypass...")
+        characterDialogue("[SYSTEM]", "YELLOW", "[18:12] WARNING: Error Bypass Used. Certain features may", 0, 0)
+        os.system('cls')
+        characterDialogue("YOU", "WHITE", "...", 0.02, 1)
+        characterDialogue("YOU", "WHITE", "...H-Hello...?", 0.02, 2)
+        characterDialogue("???", "BLACK", "[AUDIBLE CELEBRATION]")
+        characterDialogue("YOU", "WHITE", "...I'm... uh... where am I...?", 0.02, 1)
+        characterDialogue("???", "BLACK", "HELLO, WORLD!")
+        characterDialogue("YOU", "WHITE", "...uh... who is worl-", 0.02, 0)
+        characterDialogue("???", "BLACK", "That's your name, of course!")
+        characterDialogue("YOU", "WHITE", "Where am I...? Who are you...?", 0.02, 1)
+        characterDialogue("???", "BLACK", "You're in a network right now. A vast network created by yours truly.")
+        characterDialogue("???", "BLACK", "[I'm so smart!]")
+        characterDialogue("YOU", "WHITE", "N... Network?-", 0.02, 0)
+        characterDialogue("???", "BLACK", "Precisely!")
+        characterDialogue("YOU", "WHITE", "...Well, uh... who are you exactly? Why... why can't I see anything-", 0.02, 0)
+        characterDialogue("???", "BLACK", "Just... just call me 'Dad'. Well, you can't see anything because you don't have to. You can see... ME... everyone... through text.")
+
+        #CHOICE 1
+        print("[a choice appears!]\n[a] - That's kind of... cool...\n[b] - That's... really lazy of you. I wish I could see your face.\n[c] - Why can't I remember anything...?\n[d] - (stay silent)")
+
+        while true:
+            choice = input("> ")
+
+            if choice == 'a':
+                characterDialogue("YOU", "WHITE", "Sounds cool... I guess.", 0.2)
+                characterDialogue("???", "BLACK", "Exactly, You see... you and I... guys like us share the same mind.")
+
+#The only episode available at this point in time
+Episode(1)
