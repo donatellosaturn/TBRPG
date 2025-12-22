@@ -6,10 +6,13 @@ import os
 #FROM STACK OVERFLOW
 import keyboard
 keyboard.press('f11')
-counter = 16
+counter = 12
 while counter != 0:
     keyboard.press('ctrl+=')
     counter -= 1
+
+import playsound
+playsound('MainMenu.mp3')
 
 keyboard.release('ctrl')
 #FRIENDSHIP LEVEL (COULD VARY DIALOGUE)
@@ -185,21 +188,21 @@ def Episode(episodeNumber):
             print("♆ Nt")
             print("\n\n--KUIPER BELT--\n\n")
         
-#The only episode available at this point in time
+#Splash 
 def splash():
     print("PLANET 9")
-    print("                                    ")
-    print("                      ♆             ")
-    print("      ♄                             ")
-    print("              O                  ")
-    print("                       ♀            ")
-    print("                 ☉                 ")
-    print("                   ☿               ")
-    print("          ♂                         ")
-    print("                          ♃         ")
-    print("                 ⛢                  ")
-    print("                                    ")
-    print("                              9     ")
+    print(f"""
+                        {bcolors.YELLOW}:^~!!77!!~^.                                                                
+                      {bcolors.YELLOW}::~77??JJJJJJJJ?7^                                                              
+                    {bcolors.YELLOW}:~7?JJYYYYYYYYYYJJJ7.                                                            
+                   {bcolors.YELLOW}:~JJJYYYYY5YYYY5YYYJJ?.                                      {bcolors.YELLOW}^7777!~:     {bcolors.BROWN}.^^:.                        
+                  {bcolors.YELLOW}:.7JJYYYYYY5Y555G5YYYJJ^       {bcolors.BLACK}:...!     {bcolors.ORANGE}~~:   {bcolors.BLUE}^~  {bcolors.RED}:  ..     {bcolors.YELLOW}~5PYJJJ?7^    {bcolors.BROWN}!55J?7~.  {bcolors.CYAN}.:.     {bcolors.BLUE}:^:
+                  {bcolors.YELLOW}:.7JJJYYYYYYYY5555Y55JJ:       {bcolors.BLACK}...!!      {bcolors.ORANGE}~^   {bcolors.BLUE}^^   {bcolors.RED}^ .:     {bcolors.YELLOW}!YY??{bcolors.RED}?7!{bcolors.YELLOW}!^..{bcolors.BROWN}.YG5YJ?7^.: {bcolors.CYAN}!Y!.:    {bcolors.BLUE}J?!: .  {bcolors.PURPLE}9
+                  {bcolors.YELLOW}:^?JJYYY55YY55YYYYPP57                                      {bcolors.YELLOW}.7J??777~.    {bcolors.BROWN}:?JJ7!^     {bcolors.CYAN}.      {bcolors.BLUE}.:.           
+                    {bcolors.YELLOW}:^?JYYY55YYYYYYY55Y!                                        {bcolors.YELLOW}::::.                                   
+                     {bcolors.YELLOW}:.~7?JJJYYYYYYY?!:                                                              
+                        {bcolors.YELLOW}:.^~!!!!!!^:
+    {bcolors.WHITE}""")
 
 while True:
     splash()
