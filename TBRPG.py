@@ -12,7 +12,7 @@ while counter != 0:
     counter -= 1
 
 import playsound
-playsound('MainMenu.mp3')
+playsound('MainMenu.wav')
 
 keyboard.release('ctrl')
 #FRIENDSHIP LEVEL (COULD VARY DIALOGUE)
@@ -242,3 +242,4 @@ while True:
         print("Invalid")
                 
     
+
