@@ -2,13 +2,6 @@
 #When converting to .exe
 #MAKE SURE TO ADD ADDITIONAL FILES
 #(all the OSTs and whatnot)
-#AUDIO DOES WORK FOR .EXES
-
-#Another note, when installing or making releases, attach an .exe with everything.
-#Especially for this first beta release
-#DO NOT MOVE ANY OF THE FILES TO OTHER DIRECTORIES. Things do break. The only file
-#that, for the time being, would be OK to remove for me (once the exe is attached) is the .py
-#.wavs are required or things break (as mentioned)
 
 import os
 
@@ -210,7 +203,19 @@ def Episode(episodeNumber):
         
 #Splash 
 def splash():
-    print("PLANET 9")
+    print("""                                                                                     .----.   
+                        .---.                                                      .   _   \  
+_________   _...._      |   |             _..._         __.....__                 /  .' )   | 
+\        |.'      '-.   |   |           .'     '.   .-''         '.              |   (_.    / 
+ \        .'```'.    '. |   |          .   .-.   . /     .-''"'-.  `.      .|     \     ,  /  
+  \      |       \     \|   |    __    |  '   '  |/     /________\   \   .' |_     `'-'/  /   
+   |     |        |    ||   | .:--.'.  |  |   |  ||                  | .'     |.-.    /  /    
+   |      \      /    . |   |/ |   \ | |  |   |  |\    .-------------''--.  .-'\  '--'  /     
+   |     |\`'-.-'   .'  |   |`" __ | | |  |   |  | \    '-.____...---.   |  |   '-....-'      
+   |     | '-....-'`    |   | .'.''| | |  |   |  |  `.             .'    |  |                 
+  .'     '.             '---'/ /   | |_|  |   |  |    `''-...... -'      |  '.'               
+'-----------'                \ \._,\ '/|  |   |  |                       |   /                
+                              `--'  `" '--'   '--'                       `'-'                 """)
     print(f"""
                         {bcolors.YELLOW}:^~!!77!!~^.                                                                
                       {bcolors.YELLOW}::~77??JJJJJJJJ?7^                                                              
