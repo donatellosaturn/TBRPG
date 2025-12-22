@@ -222,10 +222,12 @@ while True:
                 keyboard.press('ctrl+-')
                 os.system('cls')
                 splash()
+                keyboard.release('ctrl')
             elif command == "i":
                 keyboard.press('ctrl+=')
                 os.system('cls')
                 splash()
+                keyboard.release('ctrl')
             elif command == "r":
                 os.system('cls')
                 break
