@@ -3,14 +3,6 @@
 #MAKE SURE TO ADD ADDITIONAL FILES
 #(all the OSTs and whatnot)
 
-#AUDIO DOES WORK FOR .EXES
-
-#Another note, when installing or making releases, attach an .exe with everything.
-#Especially for this first beta release
-#DO NOT MOVE ANY OF THE FILES TO OTHER DIRECTORIES. Things do break. The only file
-#that, for the time being, would be OK to remove for me (once the exe is attached) is the .py
-#.wavs are required or things break (as mentioned)
-
 import os
 
 import winsound
@@ -60,6 +52,8 @@ class bcolors:
     WHITE = '\033[38;5;231m'
     YELLOW = '\033[38;5;226m'
     MAGENTA = '\033[38;5;197m'
+    FLASHBANG = '\u001b[47m'
+    UNFLASHBANG = '\u001b[40m'
 
 def characterDialogue(NAME, CLASS, TEXT, SPEED=.02, REST=1):
     #PRINTING MESSAGE
@@ -124,6 +118,7 @@ time.sleep(3)
 def Episode(episodeNumber):
     if episodeNumber == 1:
         #EPISODE ONE
+        winsound.PlaySound('two.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
         characterDialogue("[SYSTEM]", "WHITE", "[18:09] STARTUP: Audio Systems enabled", 0, 2)
         characterDialogue("???", "BLACK", "...")
         characterDialogue("???", "BLACK", "...I hope this works.", REST=2)
@@ -147,6 +142,13 @@ def Episode(episodeNumber):
         characterDialogue("???", "BLACK", "...screw it. The ocular system isn't important anyway...")
         characterDialogue("???", "BLACK", "Let me remotely enter in an error bypass...")
         characterDialogue("[SYSTEM]", "YELLOW", "[18:12] WARNING: Error Bypass Used. Certain features may", 0, 0)
+        os.system('cls')
+        looper = 160
+        while looper != 0:
+            print(f"{bcolors.FLASHBANG}\n")
+            looper -= 1
+        time.sleep(1)
+        print(f"{bcolors.UNFLASHBANG}\n")
         os.system('cls')
         characterDialogue("YOU", "WHITE", "...", 0.02, 1)
         characterDialogue("YOU", "WHITE", "...H-Hello...?", 0.02, 2)
@@ -268,11 +270,12 @@ while True:
                 os.system('cls')
                 break
             else:
+                os.system('cls')
                 print("Invalid.")
     elif command == "e":
         exit(0)
     else:
+        os.system('cls')
         print("Invalid")
                 
     
-
