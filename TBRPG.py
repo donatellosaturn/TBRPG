@@ -1,9 +1,30 @@
+#NOTE TO SELF 1
+#When converting to .exe
+#MAKE SURE TO ADD ADDITIONAL FILES
+#(all the OSTs and whatnot)
+#AUDIO DOES WORK FOR .EXES
+
+#Another note, when installing or making releases, attach an .exe with everything.
+#Especially for this first beta release
+#DO NOT MOVE ANY OF THE FILES TO OTHER DIRECTORIES. Things do break. The only file
+#that, for the time being, would be OK to remove for me (once the exe is attached) is the .py
+#.wavs are required or things break (as mentioned)
+
+import os
+
+import winsound
+#winsound.PlaySound('one.wav', winsound.SND_FILENAME)
+winsound.PlaySound('one.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+
+
 #requires python 3.9 to test properly
 import time
 import sys
-import os
+#requires pip install playsound==1.2.2
 
-#FROM STACK OVERFLOW
+os.system('cls')
+
+
 import keyboard
 keyboard.press('f11')
 counter = 12
@@ -11,8 +32,7 @@ while counter != 0:
     keyboard.press('ctrl+=')
     counter -= 1
 
-import playsound
-playsound('MainMenu.wav')
+
 
 keyboard.release('ctrl')
 #FRIENDSHIP LEVEL (COULD VARY DIALOGUE)
@@ -242,4 +262,3 @@ while True:
         print("Invalid")
                 
     
-
