@@ -1,6 +1,27 @@
+#requires python 3.9 to test properly
 import time
 import sys
 import os
+
+#FROM STACK OVERFLOW
+import keyboard
+keyboard.press('f11')
+counter = 16
+while counter != 0:
+    keyboard.press('ctrl+=')
+    counter -= 1
+
+keyboard.release('ctrl')
+#FRIENDSHIP LEVEL (COULD VARY DIALOGUE)
+#0 --> Neutral to you
+#100 --> Loves you
+#-100 --> Can't stand you
+
+friendShip = {
+    "FATHER":0,
+    "ZACHARY":0
+}
+
 class bcolors:
     BLACK = '\033[38;5;238m'
     BLUE = '\033[38;5;21m'
@@ -116,17 +137,103 @@ def Episode(episodeNumber):
         characterDialogue("YOU", "WHITE", "N... Network?-", 0.02, 0)
         characterDialogue("???", "BLACK", "Precisely!")
         characterDialogue("YOU", "WHITE", "...Well, uh... who are you exactly? Why... why can't I see anything-", 0.02, 0)
-        characterDialogue("???", "BLACK", "Just... just call me 'Dad'. Well, you can't see anything because you don't have to. You can see... ME... everyone... through text.")
+        characterDialogue("???", "BLACK", "Just... just call me 'Father'. Well, you can't see anything because you don't have to. You can see... ME... everyone... through text.")
 
         #CHOICE 1
         print("[a choice appears!]\n[a] - That's kind of... cool...\n[b] - That's... really lazy of you. I wish I could see your face.\n[c] - Why can't I remember anything...?\n[d] - (stay silent)")
 
-        while true:
+        while True:
             choice = input("> ")
 
             if choice == 'a':
                 characterDialogue("YOU", "WHITE", "Sounds cool... I guess.", 0.2)
-                characterDialogue("???", "BLACK", "Exactly, You see... you and I... guys like us share the same mind.")
+                characterDialogue("FATHER", "BLACK", "Exactly, You see... you and I... guys like us share the same mind.")
+                characterDialogue("FATHER", "BLACK", "Intellectuals like us are a different brand of humanity. We think DIFFERENT, you and I.")
+                characterDialogue("YOU", "WHITE", "...", 0.02)
+                friendShip["FATHER"] += 10;
+            elif choice == 'b':
+                characterDialogue("YOU", "WHITE", "That's kind of lazy of you. I want to see your face.", 0.02)
+                characterDialogue("FATHER", "BLACK", "...")
+                characterDialogue("FATHER", "BLACK", "Ungrateful.")
+                characterDialogue("YOU", "WHITE", "Excuse me?-", REST=0)
+                friendShip["FATHER"] -= 10;
+            elif choice == 'c':
+                characterDialogue("YOU", "WHITE", "Why can't I remember anything, 'father'?")
+                characterDialogue("FATHER", "BLACK", "That's kind of a stupid question, ain't it?")
+                characterDialogue("FATHER", "BLACK", "A stupid question is often met with a stupidly obvious solution.")
+                characterDialogue("FATHER", "BLACK", "You can't remember anything because there's nothing to remember.")
+                friendShip["FATHER"] += 0;
+            elif choice == 'd':
+                characterDialogue("FATHER", "BLACK", "...")
+                characterDialogue("FATHER", "BLACK", "...Perhaps you misheard...")
+                friendShip["FATHER"] -= 5;
 
+            characterDialogue("FATHER", "BLACK", "Moving further; you're going to be in control of a ship, quartered near the edge of the solar system.")
+            characterDialogue("YOU", "WHITE", "Whoah.... that's pretty insane.")
+            characterDialogue("FATHER", "BLACK", "(You can't see... but I can at least show you what I'm talking about...)")
+            characterDialogue("YOU", "WHITE", "Huh?-", REST=0)
+            print("☉ S")
+            print("\n")
+            print("☿Me")
+            print("♀ Vs")
+            print("O Et")
+            print("♂ Ma")
+            print("\n\n--ASTEROID BELT--\n\n")
+            print("♃ Jr")
+            print("♄ Sn")
+            print("⛢ Us")
+            print("♆ Nt")
+            print("\n\n--KUIPER BELT--\n\n")
+        
 #The only episode available at this point in time
-Episode(1)
+def splash():
+    print("PLANET 9")
+    print("                                    ")
+    print("                      ♆             ")
+    print("      ♄                             ")
+    print("              O                  ")
+    print("                       ♀            ")
+    print("                 ☉                 ")
+    print("                   ☿               ")
+    print("          ♂                         ")
+    print("                          ♃         ")
+    print("                 ⛢                  ")
+    print("                                    ")
+    print("                              9     ")
+
+while True:
+    splash()
+    print("[1] - Begin Episode 1")
+    print("[s] - Adjust Settings")
+    print("[e] - Exit")
+    command = input("> ")
+    if command == "1":
+       os.system('cls')
+       Episode(1)
+       break
+    elif command == "s":
+        while True:
+            print("[o] - ZOOM OUT")
+            print("[i] - ZOOM IN")
+            print("[r] - RETURN")
+            command = input("> ")
+
+            if command == "o":
+                keyboard.press('ctrl+-')
+                os.system('cls')
+                splash()
+            elif command == "i":
+                keyboard.press('ctrl+=')
+                os.system('cls')
+                splash()
+            elif command == "r":
+                os.system('cls')
+                break
+            else:
+                print("Invalid.")
+    elif command == "e":
+        exit(0)
+    else:
+        print("Invalid")
+                
+    
