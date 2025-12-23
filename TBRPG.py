@@ -44,6 +44,7 @@ class bcolors:
     BROWN = '\033[38;5;94m'
     CYAN = '\033[38;5;51m'
     GREEN = '\033[38;5;46m'
+    GRAY = '\033[38;5;244m'
     ORANGE = '\033[38;5;214m'
     PURPLE = '\033[38;5;92m'
     PINK = '\033[38;5;201m'
@@ -115,6 +116,13 @@ time.sleep(3)
 #----------
 #and so it begins.
 
+def wait(firsttime=False):
+    if firsttime == True:
+        input(f"{bcolors.GRAY}[Press Enter to Continue]")
+    else:
+        input(f"{bcolors.GRAY}[Press Enter to Continue]")
+    print("\n")
+
 def Episode(episodeNumber):
     if episodeNumber == 1:
         #EPISODE ONE
@@ -153,19 +161,25 @@ def Episode(episodeNumber):
         os.system('cls')
         characterDialogue("YOU", "WHITE", "...", 0.02, 1)
         characterDialogue("YOU", "WHITE", "...H-Hello...?", 0.02, 2)
+        wait(True)
         characterDialogue("???", "BLACK", "[AUDIBLE CELEBRATION]")
+        wait()
         characterDialogue("YOU", "WHITE", "...I'm... uh... where am I...?", 0.02, 1)
         characterDialogue("???", "BLACK", "HELLO, WORLD!")
+        wait()
         characterDialogue("YOU", "WHITE", "...uh... who is worl-", 0.02, 0)
         characterDialogue("???", "BLACK", "That's your name, of course!")
+        wait()
         characterDialogue("YOU", "WHITE", "Where am I...? Who are you...?", 0.02, 1)
+        wait()
         characterDialogue("???", "BLACK", "You're in a network right now. A vast network created by yours truly.")
         characterDialogue("???", "BLACK", "[I'm so smart!]")
+        wait()
         characterDialogue("YOU", "WHITE", "N... Network?-", 0.02, 0)
         characterDialogue("???", "BLACK", "Precisely!")
+        wait()
         characterDialogue("YOU", "WHITE", "...Well, uh... who are you exactly? Why... why can't I see anything-", 0.02, 0)
         characterDialogue("???", "BLACK", "Just... just call me 'Father'. Well, you can't see anything because you don't have to. You can see... ME... everyone... through text.")
-
         #CHOICE 1
         print("[a choice appears!]\n[a] - That's kind of... cool...\n[b] - That's... really lazy of you. I wish I could see your face.\n[c] - Why can't I remember anything...?\n[d] - (stay silent)")
 
@@ -230,19 +244,23 @@ _________   _...._      |   |             _..._         __.....__               
    |     | '-....-'`    |   | .'.''| | |  |   |  |  `.             .'    |  |                 
   .'     '.             '---'/ /   | |_|  |   |  |    `''-...... -'      |  '.'               
 '-----------'                \ \._,\ '/|  |   |  |                       |   /                
-                              `--'  `" '--'   '--'                       `'-'                 """)
-    print(f"""
-                        {bcolors.YELLOW}:^~!!77!!~^.                                                                
-                      {bcolors.YELLOW}::~77??JJJJJJJJ?7^                                                              
-                    {bcolors.YELLOW}:~7?JJYYYYYYYYYYJJJ7.                                                            
-                   {bcolors.YELLOW}:~JJJYYYYY5YYYY5YYYJJ?.                                      {bcolors.YELLOW}^7777!~:     {bcolors.BROWN}.^^:.                        
-                  {bcolors.YELLOW}:.7JJYYYYYY5Y555G5YYYJJ^       {bcolors.BLACK}:...!     {bcolors.ORANGE}~~:   {bcolors.BLUE}^~  {bcolors.RED}:  ..     {bcolors.YELLOW}~5PYJJJ?7^    {bcolors.BROWN}!55J?7~.  {bcolors.CYAN}.:.     {bcolors.BLUE}:^:
-                  {bcolors.YELLOW}:.7JJJYYYYYYYY5555Y55JJ:       {bcolors.BLACK}...!!      {bcolors.ORANGE}~^   {bcolors.BLUE}^^   {bcolors.RED}^ .:     {bcolors.YELLOW}!YY??{bcolors.RED}?7!{bcolors.YELLOW}!^..{bcolors.BROWN}.YG5YJ?7^.: {bcolors.CYAN}!Y!.:    {bcolors.BLUE}J?!: .  {bcolors.PURPLE}9
-                  {bcolors.YELLOW}:^?JJYYY55YY55YYYYPP57                                      {bcolors.YELLOW}.7J??777~.    {bcolors.BROWN}:?JJ7!^     {bcolors.CYAN}.      {bcolors.BLUE}.:.           
-                    {bcolors.YELLOW}:^?JYYY55YYYYYYY55Y!                                        {bcolors.YELLOW}::::.                                   
-                     {bcolors.YELLOW}:.~7?JJJYYYYYYY?!:                                                              
-                        {bcolors.YELLOW}:.^~!!!!!!^:
-    {bcolors.WHITE}""")
+                             `--'  `" '--'   '--'                       `'-'                 """)
+
+    print("""                                                 
+                                            .. ...: :::.:...                   
+                                         .. ..... ..:.::. : :::                 
+                                       .. ...          :;;::...:.                         
+                                      .. ..              :::;::;:+:                    
+                                       ..                 ;;::  ...:.                         
+                                 .    ...                  ;;:;:                          
+                                   .  .           : .      :::;;:..;;;: .  .                   
+                                      .          .::;.     ::;:.::::::  ... .:: .              
+                                       .;                  +;;;;++;;: $                    
+                                         .                X$$$X+.                             
+                                                       :$$+                           
+                                           .                                   
+                                                       .                 """)
+
 
 while True:
     splash()
