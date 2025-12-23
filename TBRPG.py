@@ -56,6 +56,42 @@ class bcolors:
     FLASHBANG = '\u001b[47m'
     UNFLASHBANG = '\u001b[40m'
 
+def asciiArt(art="None"):
+    os.system('cls')
+    if art == "1":
+        print(f"""{bcolors.GRAY}                    
+                                                                 X&&&&&&&;.:++      &&&&&&&                                      
+                                                               &&&&&&&;:+X      &&&&&&&&&&&                                      
+                                                              &&&&&+;+x     &&&&&$&$.&&&&&&                                      
+                                                              &&;.;+     &&&&$&&&&&&&&&&&&&                                      
+                                                             $&;$:   .&&&&&&&&&&&&&&&&&&&&&                                      
+                                                             &&;+ &+&&&&&&$&&&&&&&&&&&&&&&&                                      
+                                                             &&;+X&X&&&&&&&&&&&&&&&&&&&&&&&                                      
+                                                             &&$ &;X$&&&$& X;X&&&&&&&&&&&&                                      
+                                                             &&& &X&&$&&&&&&&&&&&&&&&&&&&&&                                      
+                                                             &&& &$$&$&&&&$&&&&&&&&&&&&&&&&                                      
+                                                             &$& &&&&&&&$&&&&&&&&&$&$$&&&&&                                      
+                                                            X&X& &&&&&&&&&&&&&&&&&$&&$&$&&&                                      
+                                                            &&X& &X$&&&&&&&&$&&&&&&&&&&&&&&                                      
+                                                            &&$& &&&&&&$&&&&&&&&&X:    &$&&                                      
+                                                            &&$$ &&&&&&&&&X:        .;&&$&&                                      
+                                                            &&x+ &&&&:       ;&&&&&&&&&&$&&                                      
+                                                            &&        :&&&&&&&&&$$$$$X$$$&$                                      
+                                                            &:;& $&&&&&&&$X$XX$$$$$$$X$X$&$                                      
+                                                           :&&&&&&&$$XXXX$$XX$XX$XX$$XXXX&$                                      
+                                                           ;&$XX$$$$$$$$$$$$$$$X$X$$$&&&&&$                                      
+                                                           ;&$$$$$$$X$$$$&&&&&&&&&&&&X   ++                                      
+                                              .            ;&$$&&&&&&&&&&&X.         x&&&&&                                      
+                                               . .         X&&$+:;+;:;         $&&&&&&XxX&+                                      
+                           .   .             . .           :X+$$&&&&&&&&&&&&&&&&&$XXXXXxX&+                                      
+                                       ....  . ...         &&&$$$$$$X$XXXXXXXXXXXXXXxXXxX&+                                      
+                                   .      . .... .         &&&&&&X$$XXXXXXXXXXXXXXXxXXXXX&+                                      
+                       .  .. ... . . .. . .   .           .&:::::::XXXXXXXXXXXXXXXXXXXXxX&;                                      
+              ....... .:................... ...... ...    :&$&&&&&&&&&&&&&&&&&&&&&&&&&&&&&+                                                                                            {bcolors.WHITE}""")
+    else:
+        print(" ")
+
+
 def characterDialogue(NAME, CLASS, TEXT, SPEED=.02, REST=1):
     #PRINTING MESSAGE
     if CLASS == "BLACK":
@@ -92,7 +128,6 @@ def characterDialogue(NAME, CLASS, TEXT, SPEED=.02, REST=1):
         time.sleep(SPEED)
 
     time.sleep(REST)
-
     print("\n")
 
 def reference():
@@ -126,32 +161,47 @@ def wait(firsttime=False):
 def Episode(episodeNumber):
     if episodeNumber == 1:
         #EPISODE ONE
+        asciiArt("1")
         winsound.PlaySound('two.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
         characterDialogue("[SYSTEM]", "WHITE", "[18:09] STARTUP: Audio Systems enabled", 0, 2)
         characterDialogue("???", "BLACK", "...")
+        asciiArt("1")
         characterDialogue("???", "BLACK", "...I hope this works.", REST=2)
         time.sleep(3)
+        asciiArt("1")
         characterDialogue("???", "BLACK", "Sending a test message... now.", REST=0)
         characterDialogue("[SYSTEM]", "WHITE", "[18:10] DEBUG: Automated Message sent from (125.52.102.8)", 0, 2)
+        asciiArt("1")
         characterDialogue("???", "BLACK", "Holy... shit.", REST=2)
+        asciiArt("1")
         characterDialogue("???", "BLACK", "It actually...")
+        asciiArt("1")
         characterDialogue("???", "BLACK", "Okay... okay... holy shit.")
+        asciiArt("1")
         characterDialogue("???", "BLACK", "[AUDIBLE SIGH]")
+        asciiArt("1")
         characterDialogue("???", "BLACK", "Alright.")
+        asciiArt("1")
         characterDialogue("???", "BLACK", "Turning on its infrastructure... now.")
         loop = 10
         while loop != 0:
             loop -= 1
             characterDialogue("[SYSTEM]", "YELLOW", "[18:11] WARNING: Unknown Diagnostic Error Occured", 0, 0)
         characterDialogue("[SYSTEM]", "RED", "[18:11] ERROR: Ocular System is damaged. Continue?", 0, 2)
+        asciiArt("1")
         characterDialogue("???", "BLACK", "...")
+        asciiArt("1")
         characterDialogue("???", "BLACK", "...Diagnostic Error?")
+        asciiArt("1")
         characterDialogue("???", "BLACK", "I don't remember programming that in...")
+        asciiArt("1")
         characterDialogue("???", "BLACK", "...screw it. The ocular system isn't important anyway...")
+        asciiArt("1")
         characterDialogue("???", "BLACK", "Let me remotely enter in an error bypass...")
+        asciiArt("1")
         characterDialogue("[SYSTEM]", "YELLOW", "[18:12] WARNING: Error Bypass Used. Certain features may", 0, 0)
         os.system('cls')
-        looper = 160
+        looper = 240
         while looper != 0:
             print(f"{bcolors.FLASHBANG}\n")
             looper -= 1
@@ -229,7 +279,9 @@ def Episode(episodeNumber):
             print("⛢ Us")
             print("♆ Nt")
             print("\n\n--KUIPER BELT--\n\n")
-        
+
+
+ 
 #Splash 
 def splash():
     print("""                                                                                     .----.   
