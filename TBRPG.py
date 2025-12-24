@@ -166,11 +166,11 @@ def asciiArt(art="None"):
         print(f"""{bcolors.BLUE}      xxxxxxxxx           
    xxxxxxxxxxxxxxx        
  .xxxxxxxxxxxxxxxxxxx     
-::xxxxxxxxxxxxxxxxxxx    
+::xxxxxxxxxxxxxxxxxxxx    
 .::xxxxxxxxxxxxxxxxxxx  
-...::xxxxxxxxxxxxxxxxx 
-  ..::::xxxxxxxxxxxxxxxx
-    ....::xxxxxxxxxxxxxxx
+...::xxxxxxxxxxxxxxxxxx 
+  ..::::xxxxxxxxxxxxxxx
+    ....::xxxxxxxxxxxxx
   .  .....:::::xxxxxxxx.
        .  .....::::::::   
               ........    
