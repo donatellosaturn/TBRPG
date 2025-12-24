@@ -168,10 +168,10 @@ def asciiArt(art="None"):
  .xxxxxxxxxxxxxxxxxxx     
 ::xxxxxxxxxxxxxxxxxxxx    
 .::xxxxxxxxxxxxxxxxxxxx   
-...::xxxxxxxxxxxxxxxxxx ++
-  ..::::xxxxxxxxxxxxxxxx||
-    ....::xxxxxxxxxxxxxxx|
-  .  .....:::::xxxxxxxx.++
+...::xxxxxxxxxxxxxxxxxx 
+  ..::::xxxxxxxxxxxxxxxx
+    ....::xxxxxxxxxxxxxxx
+  .  .....:::::xxxxxxxx.
        .  .....::::::::   
               ........    
          .       ..       
@@ -337,7 +337,7 @@ def Episode(episodeNumber):
                 wait()
                 friendShip["FATHER"] += 10;
             elif choice == 'b':
-                winsound.PlaySound('music/disrespect.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+                winsound.PlaySound('ambient/VHS.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
                 characterDialogue("YOU", "WHITE", "That's kind of lazy of you. I want to see your face.", 0.02)
                 wait()
                 characterDialogue("FATHER", "BLACK", "...")
