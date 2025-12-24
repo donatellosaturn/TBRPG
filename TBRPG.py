@@ -112,7 +112,7 @@ def asciiArt(art="None"):
                                                                     {bcolors.WHITE}""")
         #RESOURCE: Converted PNG to Ascii Art
     elif art == "3":
-        print("{bcolors.GREEN}" + """              _oo:\bk99M[<$$+b\.
+        print(f"{bcolors.GREEN}" + """              _oo:\bk99M[<$$+b\.
            .$*"MMMMMMMM[:"\Mb\?^" .
        . '`    HMMMMMMMMMMHMMMM+?.  `.
      .        .HMMMMMMMMMMMMMMP"''     .
@@ -134,7 +134,7 @@ def asciiArt(art="None"):
      `.                     .HH*'     .
        `-.                  &R".    .-
            -.               ._   .-
-              '-. .__________?..-""" + "{bcolors.WHITE}")
+              '-. .__________?..-""" + f"{bcolors.WHITE}")
         #RESOURCE:  https://ascii.co.uk/art/earth
         #for some reason fstring wouldnt work for this one. weird.
     elif art == "4":
