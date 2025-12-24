@@ -7,7 +7,7 @@ import os
 
 import winsound
 #winsound.PlaySound('one.wav', winsound.SND_FILENAME)
-winsound.PlaySound('one.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+winsound.PlaySound('music/one.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
 
 
 #requires python 3.9 to test properly
@@ -232,7 +232,7 @@ def Episode(episodeNumber):
     if episodeNumber == 1:
         #EPISODE ONE
         asciiArt("1")
-        winsound.PlaySound('two.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+        winsound.PlaySound('music/two.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
         characterDialogue("[SYSTEM]", "WHITE", "[18:09] STARTUP: Audio Systems enabled", 0, 2)
         characterDialogue("???", "BLACK", "...")
         asciiArt("1")
@@ -277,7 +277,7 @@ def Episode(episodeNumber):
             looper -= 1
         time.sleep(1)
         print(f"{bcolors.UNFLASHBANG}\n")
-        winsound.PlaySound('three.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+        winsound.PlaySound('music/three.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
         os.system('cls')
         characterDialogue("YOU", "WHITE", "...", 0.02, 1)
         characterDialogue("YOU", "WHITE", "...H-Hello...?", 0.02, 2)
@@ -307,21 +307,21 @@ def Episode(episodeNumber):
             choice = input("> ")
 
             if choice == 'a':
-                winsound.PlaySound('rapport.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+                winsound.PlaySound('music/rapport.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
                 characterDialogue("YOU", "WHITE", "Sounds cool... I guess.", 0.2)
                 characterDialogue("FATHER", "BLACK", "Exactly, You see... you and I... guys like us share the same mind.")
                 characterDialogue("FATHER", "BLACK", "Intellectuals like us are a different brand of humanity. We think DIFFERENT, you and I.")
                 characterDialogue("YOU", "WHITE", "...", 0.02)
                 friendShip["FATHER"] += 10;
             elif choice == 'b':
-                winsound.PlaySound('disrespect.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+                winsound.PlaySound('music/disrespect.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
                 characterDialogue("YOU", "WHITE", "That's kind of lazy of you. I want to see your face.", 0.02)
                 characterDialogue("FATHER", "BLACK", "...")
                 characterDialogue("FATHER", "BLACK", "Ungrateful.")
                 characterDialogue("YOU", "WHITE", "Excuse me?-", REST=0)
                 friendShip["FATHER"] -= 10;
             elif choice == 'c':
-                winsound.PlaySound('rapport.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+                winsound.PlaySound('music/rapport.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
                 characterDialogue("YOU", "WHITE", "Why can't I remember anything, 'father'?")
                 characterDialogue("FATHER", "BLACK", "That's kind of a stupid question, ain't it?")
                 characterDialogue("FATHER", "BLACK", "A stupid question is often met with a stupidly obvious solution.")
@@ -334,27 +334,27 @@ def Episode(episodeNumber):
                 characterDialogue("FATHER", "BLACK", "...")
                 characterDialogue("FATHER", "BLACK", "...Perhaps you misheard...")
                 friendShip["FATHER"] -= 5;
-            winsound.PlaySound('building.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+            winsound.PlaySound('music/building.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
             characterDialogue("FATHER", "BLACK", "Moving further; you're going to be in control of a ship, quartered near the edge of the solar system.")
             characterDialogue("YOU", "WHITE", "Whoah.... that's pretty insane.")
             characterDialogue("FATHER", "BLACK", "(You can't see... but I can at least show you what I'm talking about...)")
             characterDialogue("YOU", "WHITE", "Huh?-", REST=0)
 
             #this next part will contain ambient audio directly sourced from NASA.
-            winsound.PlaySound('SUN.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+            winsound.PlaySound('ambient/SUN.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
             asciiArt("2")
             characterDialogue("FATHER", "BLACK", "...")
             characterDialogue("FATHER", "BLACK", "This is the sun.")
             characterDialogue("FATHER", "BLACK", "WE orbit around it nearly 18 miles a second, 365 days a year, for the rest of... well... our lives.")
             characterDialogue("YOU", "WHITE", "It seems pretty important, I think.")
             characterDialogue("YOU", "WHITE", "I especially love the warm colors-", REST=0)
-            winsound.PlaySound('EARTH.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+            winsound.PlaySound('ambient/EARTH.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
             asciiArt("3")
             characterDialogue("FATHER", "BLACK", "This... this is Earth. I'm here right now.", 0.02)
             characterDialogue("YOU", "WHITE", "Am I there, on Earth, with you?", 0.05)
             characterDialogue("FATHER", "BLACK", "No, you dolt. I already told you- you're on a network. Right now, you're somewhere near... Saturn I'd say.", 0.05)
             characterDialogue("YOU", "WHITE", "...Saturn?", REST=0)
-            winsound.PlaySound('SATURN.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+            winsound.PlaySound('ambient/SATURN.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
             asciiArt("4")
             characterDialogue("YOU", "WHITE", "...I don't like the way it sounds.", REST=2)
             characterDialogue("YOU", "WHITE", "It's really pretty, though-", REST=0)
