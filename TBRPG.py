@@ -88,6 +88,28 @@ def asciiArt(art="None"):
                                    .      . .... .         &&&&&&X$$XXXXXXXXXXXXXXXxXXXXX&+                                      
                        .  .. ... . . .. . .   .           .&:::::::XXXXXXXXXXXXXXXXXXXXxX&;                                      
               ....... .:................... ...... ...    :&$&&&&&&&&&&&&&&&&&&&&&&&&&&&&&+                                                                                            {bcolors.WHITE}""")
+    elif art == "2":
+        print(f"""{bcolors.ORANGE}                                               
+                                                    .                                
+                                                     +                               
+                                                     -         .                     
+                                         -            +   .   +                      
+                                           :+         =+  - :+    .                  
+                                              ++.   + +*++++*= .=.       .           
+                                                :#*=+++###*@*+++  .+++:              
+                                               .  :#{bcolors.YELLOW}@@@@@@@@@{bcolors.ORANGE}%%#*+-                  
+                                                 ++##{bcolors.YELLOW}@@@@@@@@@{bcolors.ORANGE}%**=--:.               
+                                           :+++++*#%{bcolors.YELLOW}@@@@@@@@@@{bcolors.ORANGE}%*+-                   
+                                                 =*%%{bcolors.YELLOW}@@@@@@@@@{bcolors.ORANGE}%#*+++:                
+                                               ++=-*%##{bcolors.YELLOW}@@@@{bcolors.ORANGE}##***+    -...:           
+                                                  ++=+*+***++++  ++                  
+                                                ++   +:+++=+-=++   .-                
+                                               =    +  -+. --  =-                    
+                                             .         :-   -   :-                   
+                                                       -- .  .    -                  
+                                                      .:                             
+                                                       :                             
+                                                                    {bcolors.WHITE}""")
     else:
         print(" ")
 
@@ -256,6 +278,8 @@ def Episode(episodeNumber):
                 characterDialogue("FATHER", "BLACK", "That's kind of a stupid question, ain't it?")
                 characterDialogue("FATHER", "BLACK", "A stupid question is often met with a stupidly obvious solution.")
                 characterDialogue("FATHER", "BLACK", "You can't remember anything because there's nothing to remember.")
+                characterDialogue("YOU", "WHITE", "Oh... ")
+                characterDialogue("FATHER", "BLACK", "[AUDIBLE SIGH]")
                 friendShip["FATHER"] += 0;
             elif choice == 'd':
                 #nothing will play.
@@ -267,18 +291,9 @@ def Episode(episodeNumber):
             characterDialogue("YOU", "WHITE", "Whoah.... that's pretty insane.")
             characterDialogue("FATHER", "BLACK", "(You can't see... but I can at least show you what I'm talking about...)")
             characterDialogue("YOU", "WHITE", "Huh?-", REST=0)
-            print("☉ S")
-            print("\n")
-            print("☿Me")
-            print("♀ Vs")
-            print("O Et")
-            print("♂ Ma")
-            print("\n\n--ASTEROID BELT--\n\n")
-            print("♃ Jr")
-            print("♄ Sn")
-            print("⛢ Us")
-            print("♆ Nt")
-            print("\n\n--KUIPER BELT--\n\n")
+
+            #this next part will contain ambient audio directly sourced from NASA.
+            asciiArt("2")
 
 
  
