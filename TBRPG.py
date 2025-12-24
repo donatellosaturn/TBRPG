@@ -119,10 +119,12 @@ def asciiArt(art="None"):
     .         `MMMMMMMMMMMMMM|         -`.
    -           `&MMMMMMHH##H:             :
   :             ` *MMM}    `|\             |
+  
  : `-              ?MMb__#|""`|+v..         \
+ 
 .                    `''*H#b       -        :|
 :                         `*\v,#M#b#,        \
-.                             9MMMMMMHb.     :
+
 :                        .   #MMMMMMMMMb\    -
 -                           .HMMMMMMMMMMMMb  :
 :                            `MMMMMMMMMMMMH  .
@@ -156,8 +158,25 @@ def asciiArt(art="None"):
   ....        .lllllllllll      xxxxxxxx                 
  ...     ::..llllllll             xxxx                   
  ,,........llllll                                        
-,,,,,,..::::                                             {bcolors.WHITE}""")
+,,,,,,..::::
+
+{bcolors.WHITE}""")
         #made by ME! :D
+    elif art == "5":
+        print(f"""{bcolors.BLUE}      xxxxxxxxx           
+   xxxxxxxxxxxxxxx        
+ .xxxxxxxxxxxxxxxxxxx     
+::xxxxxxxxxxxxxxxxxxxx    
+.::xxxxxxxxxxxxxxxxxxxx   
+...::xxxxxxxxxxxxxxxxxx ++
+  ..::::xxxxxxxxxxxxxxxx||
+    ....::xxxxxxxxxxxxxxx|
+  .  .....:::::xxxxxxxx.++
+       .  .....::::::::   
+              ........    
+         .       ..       
+                  .       {bcolors.WHITE}""")
+        #ALSO MADE BY ME
     else:
         print(" ")
 
@@ -309,35 +328,53 @@ def Episode(episodeNumber):
             if choice == 'a':
                 winsound.PlaySound('music/rapport.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
                 characterDialogue("YOU", "WHITE", "Sounds cool... I guess.", 0.2)
+                wait()
                 characterDialogue("FATHER", "BLACK", "Exactly, You see... you and I... guys like us share the same mind.")
+                wait()
                 characterDialogue("FATHER", "BLACK", "Intellectuals like us are a different brand of humanity. We think DIFFERENT, you and I.")
+                wait()
                 characterDialogue("YOU", "WHITE", "...", 0.02)
+                wait()
                 friendShip["FATHER"] += 10;
             elif choice == 'b':
                 winsound.PlaySound('music/disrespect.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
                 characterDialogue("YOU", "WHITE", "That's kind of lazy of you. I want to see your face.", 0.02)
+                wait()
                 characterDialogue("FATHER", "BLACK", "...")
+                wait()
                 characterDialogue("FATHER", "BLACK", "Ungrateful.")
+                wait()
                 characterDialogue("YOU", "WHITE", "Excuse me?-", REST=0)
                 friendShip["FATHER"] -= 10;
             elif choice == 'c':
                 winsound.PlaySound('music/rapport.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
                 characterDialogue("YOU", "WHITE", "Why can't I remember anything, 'father'?")
+                wait()
                 characterDialogue("FATHER", "BLACK", "That's kind of a stupid question, ain't it?")
+                wait()
                 characterDialogue("FATHER", "BLACK", "A stupid question is often met with a stupidly obvious solution.")
+                wait()
                 characterDialogue("FATHER", "BLACK", "You can't remember anything because there's nothing to remember.")
+                wait()
                 characterDialogue("YOU", "WHITE", "Oh... ")
+                wait()
                 characterDialogue("FATHER", "BLACK", "[AUDIBLE SIGH]")
+                wait()
                 friendShip["FATHER"] += 0;
             elif choice == 'd':
                 #nothing will play.
                 characterDialogue("FATHER", "BLACK", "...")
+                wait()
                 characterDialogue("FATHER", "BLACK", "...Perhaps you misheard...")
+                wait()
                 friendShip["FATHER"] -= 5;
             winsound.PlaySound('music/building.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
             characterDialogue("FATHER", "BLACK", "Moving further; you're going to be in control of a ship, quartered near the edge of the solar system.")
+            wait()
             characterDialogue("YOU", "WHITE", "Whoah.... that's pretty insane.")
+            wait()
             characterDialogue("FATHER", "BLACK", "(You can't see... but I can at least show you what I'm talking about...)")
+            wait()
             characterDialogue("YOU", "WHITE", "Huh?-", REST=0)
 
             #this next part will contain ambient audio directly sourced from NASA.
@@ -345,21 +382,106 @@ def Episode(episodeNumber):
             asciiArt("2")
             characterDialogue("FATHER", "BLACK", "...")
             characterDialogue("FATHER", "BLACK", "This is the sun.")
+            wait()
             characterDialogue("FATHER", "BLACK", "WE orbit around it nearly 18 miles a second, 365 days a year, for the rest of... well... our lives.")
+            wait()
             characterDialogue("YOU", "WHITE", "It seems pretty important, I think.")
+            wait()
             characterDialogue("YOU", "WHITE", "I especially love the warm colors-", REST=0)
             winsound.PlaySound('ambient/EARTH.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
             asciiArt("3")
             characterDialogue("FATHER", "BLACK", "This... this is Earth. I'm here right now.", 0.02)
+            wait()
             characterDialogue("YOU", "WHITE", "Am I there, on Earth, with you?", 0.05)
+            wait()
             characterDialogue("FATHER", "BLACK", "No, you dolt. I already told you- you're on a network. Right now, you're somewhere near... Saturn I'd say.", 0.05)
+            wait()
             characterDialogue("YOU", "WHITE", "...Saturn?", REST=0)
             winsound.PlaySound('ambient/SATURN.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
             asciiArt("4")
             characterDialogue("YOU", "WHITE", "...I don't like the way it sounds.", REST=2)
+            wait()
             characterDialogue("YOU", "WHITE", "It's really pretty, though-", REST=0)
+            wait()
             characterDialogue("FATHER", "BLACK", "Yes, yes, Saturn is a LOVELY planet and all that, but that's not where you'll be stationed.", 0.025)
+            wait()
             characterDialogue("FATHER", "BLACK", "Like I said, you'll be stationed somewhere near Neptune, and I mean that.")
+            wait()
+            winsound.PlaySound('ambient/NEPTUNE.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+            asciiArt("5")
+            characterDialogue("YOU", "WHITE", "Is this Neptune?", REST=2)
+            wait()
+            characterDialogue("FATHER", "BLACK", "Yes.", 0.25)
+            wait()
+            characterDialogue("YOU", "WHITE", "It's...", 0.2)
+            break
+
+        #CHOICE 2
+        print("[a choice appears!]\n[a] - Beautiful\n[b] - Blue\n[c] - Horrifying\n[d] - Cold")\
+
+        while True:
+            choice = input("> ")
+
+            if choice == "a":
+                asciiArt("5")
+                winsound.PlaySound('music/pureRawBeauty.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+                characterDialogue("YOU", "WHITE", "It's ...beautiful.", REST=3)
+                wait()
+                friendShip["FATHER"] += 10;
+                characterDialogue("FATHER", "BLACK", "I'm glad you feel that way, WORLD.")
+                wait()
+                characterDialogue("FATHER", "BLACK", "My... my grandpa, or as I called him, 'pops', always loved Neptune.")
+                wait()
+                asciiArt("5")
+                os.system('cls')
+                print("(Flashback)\n")
+                asciiArt("5")
+                characterDialogue("FATHER [young]", "BLACK", "Hey, Grandpa, What's that star up there called?")
+                wait()
+                characterDialogue("POPS", "GRAY", "That's 'Neptune'.")
+                wait()
+                characterDialogue("FATHER [young]", "BLACK", "How come I've never heard of it?")
+                wait()
+                characterDialogue("POPS", "GRAY", "Your school probably won't focus on the stars or space or many abstract things.")
+                wait()
+                characterDialogue("POPS", "GRAY", "There will come a day where, hopefully, you'll outgrow your school entirely.")
+                wait()
+                asciiArt("5")
+                characterDialogue("POPS", "GRAY", "Neptune is one of the eight planets in our solar system. The very last one.")
+                wait()
+                characterDialogue("FATHER [young]", "BLACK", "The... last one?")
+                wait()
+                characterDialogue("POPS", "GRAY", "[CHUCKLE]", 0.005, 0.5)
+                wait()
+                characterDialogue("POPS", "GRAY", "It's blue, just like our planet, but it's very cold.")
+                wait()
+                asciiArt("5")
+                characterDialogue("POPS", "GRAY", "So, if you ever visit Neptune, be sure to wear a coat.")
+                wait()
+                asciiArt("5")
+                winsound.PlaySound('ambient/VHS.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+                characterDialogue("FATHER", "BLACK", "I... haven't heard from him in a while.")
+                wait()
+                characterDialogue("FATHER", "BLACK", "No matter, hopefully, when things change for the better, I'll be able to go there one day.")
+                wait()
+                characterDialogue("FATHER", "BLACK", "...")
+                wait()
+                characterDialogue("FATHER", "BLACK", "This is ridiculous. I'm not even speaking to a real... person.", REST=3)
+                wait()
+                os.system('cls')
+                characterDialogue("FATHER", "BLACK", "Thank you for listening to me.")
+                wait()
+                characterDialogue("FATHER", "BLACK", "Keep the crew safe.")
+                wait()
+                characterDialogue("FATHER", "BLACK", "There's a ninth planet out there, somewhere beyond Neptune.")
+                wait()
+                characterDialogue("FATHER", "BLACK", "Bring them to it.")
+                wait()
+                characterDialogue("FATHER", "BLACK", "I believe in you.")
+                wait()
+            elif choice == "b":
+                pass
+            
 
 
  
@@ -397,7 +519,9 @@ _________   _...._      |   |             _..._         __.....__               
 
 while True:
     splash()
-    print("[1] - Begin Episode 1")
+    print("EPISODE SELECTION")
+    print("[0] - 'Hello, WORLD'")
+    print("\nADDITIONAL STUFF")
     print("[s] - Adjust Settings")
     print("[e] - Exit")
     command = input("> ")
