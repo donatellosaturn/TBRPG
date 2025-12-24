@@ -166,9 +166,9 @@ def asciiArt(art="None"):
         print(f"""{bcolors.BLUE}      xxxxxxxxx           
    xxxxxxxxxxxxxxx        
  .xxxxxxxxxxxxxxxxxxx     
-::xxxxxxxxxxxxxxxxxxxx    
-.::xxxxxxxxxxxxxxxxxxxx   
-...::xxxxxxxxxxxxxxxxxx 
+::xxxxxxxxxxxxxxxxxxx    
+.::xxxxxxxxxxxxxxxxxxx  
+...::xxxxxxxxxxxxxxxxx 
   ..::::xxxxxxxxxxxxxxxx
     ....::xxxxxxxxxxxxxxx
   .  .....:::::xxxxxxxx.
@@ -193,6 +193,8 @@ def characterDialogue(NAME, CLASS, TEXT, SPEED=.02, REST=1):
         print(f"{bcolors.CYAN} {NAME}:", end='')
     elif CLASS == "GREEN":
         print(f"{bcolors.GREEN} {NAME}:", end='')
+    elif CLASS == "GRAY":
+        print(f"{bcolors.GRAY} {NAME}:", end='')
     elif CLASS == "ORANGE":
         print(f"{bcolors.ORANGE} {NAME}:", end='')
     elif CLASS == "PURPLE":
