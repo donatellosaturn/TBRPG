@@ -110,6 +110,53 @@ def asciiArt(art="None"):
                                                       .:                             
                                                        :                             
                                                                     {bcolors.WHITE}""")
+        #RESOURCE: Converted PNG to Ascii Art
+    elif art == "3":
+        print(f"""{bcolors.GREEN}              _oo:\bk99M[<$$+b\.
+           .$*"MMMMMMMM[:"\Mb\?^" .
+       . '`    HMMMMMMMMMMHMMMM+?.  `.
+     .        .HMMMMMMMMMMMMMMP"''     .
+    .         `MMMMMMMMMMMMMM|         -`.
+   -           `&MMMMMMHH##H:             :
+  :             `(*MMM}    `|\             |
+ : `-              ?MMb__#|""`|+v..         \
+.                    `''*H#b       -        :|
+:                         `*\v,#M#b#,        \
+.                             9MMMMMMHb.     :
+:                        .   #MMMMMMMMMb\    -
+-                           .HMMMMMMMMMMMMb  :
+:                            `MMMMMMMMMMMMH  .
+-:  .                         `#MMMMMMMMMP   '
+ :                              ]MMMMMMMH'  :
+  -                            ,MMMMMM?'   .
+  `:                           HMMMMH"    -
+    -.                       .HMM#*     .-
+     `.                     .HH*'     .
+       `-.                  &R".    .-
+           -.               ._   .-
+              '-. .__________?..-`{bcolors.WHITE}""")
+        #RESOURCE:  https://ascii.co.uk/art/earth
+    elif art == "4":
+        print(f"""{bcolors.BROWN}                                                      ::: 
+                                                 ::::::::
+                                           ,,,..:::  ::::
+                              xxxx^^^    ......     :::: 
+                          xxxxxxxx^^^^^^^..      :::::   
+                       xxxxxxxxxxxx^^^^^^xx    ::::::    
+                       xxxxxxxxxxxxxxxxxxx::llllll:      
+                       xxxxxxxxxxxxxxxx:::::llllll       
+                       xxxxxxxxxxxx:::::lllllllll        
+                       xxxxxxx::::::::llllllllll         
+                        xxx::::lllllllllllll:            
+                       :::::llllllllllll::::             
+                       llllllllllll:::::::xx             
+     .......        llllllllllll:::::xxxxxxx             
+   ......         llllllllll::::::xxxxxxxx               
+  ....        .lllllllllll      xxxxxxxx                 
+ ...     ::..llllllll             xxxx                   
+ ,,........llllll                                        
+,,,,,,..::::                                             {bcolors.WHITE}""")
+        #made by ME! :D
     else:
         print(" ")
 
@@ -293,7 +340,25 @@ def Episode(episodeNumber):
             characterDialogue("YOU", "WHITE", "Huh?-", REST=0)
 
             #this next part will contain ambient audio directly sourced from NASA.
+            winsound.PlaySound('SUN.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
             asciiArt("2")
+            characterDialogue("FATHER", "BLACK", "...")
+            characterDialogue("FATHER", "BLACK", "This is the sun.")
+            characterDialogue("FATHER", "BLACK", "WE orbit around it nearly 18 miles a second, 365 days a year, for the rest of... well... our lives.")
+            characterDialogue("YOU", "WHITE", "It seems pretty important, I think.")
+            characterDialogue("YOU", "WHITE", "I especially love the warm colors-", REST=0)
+            winsound.PlaySound('EARTH.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+            asciiArt("3")
+            characterDialogue("FATHER", "BLACK", "This... this is Earth. I'm here right now.", 0.02)
+            characterDialogue("YOU", "WHITE", "Am I there, on Earth, with you?", 0.05)
+            characterDialogue("FATHER", "BLACK", "No, you dolt. I already told you- you're on a network. Right now, you're somewhere near... Saturn I'd say.", 0.05)
+            characterDialogue("YOU", "WHITE", "...Saturn?", REST=0)
+            winsound.PlaySound('SATURN.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+            asciiArt("4")
+            characterDialogue("YOU", "WHITE", "...I don't like the way it sounds.", REST=2)
+            characterDialogue("YOU", "WHITE", "It's really pretty, though-", REST=0)
+            characterDialogue("FATHER", "BLACK", "Yes, yes, Saturn is a LOVELY planet and all that, but that's not where you'll be stationed.", 0.025)
+            characterDialogue("FATHER", "BLACK", "Like I said, you'll be stationed somewhere near Neptune, and I mean that.")
 
 
  
