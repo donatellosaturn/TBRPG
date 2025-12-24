@@ -248,8 +248,8 @@ def wait(firsttime=False):
     print("\n")
 
 def Episode(episodeNumber):
-    if episodeNumber == 1:
-        #EPISODE ONE
+    if episodeNumber == 0:
+        #PROLOGUE
         asciiArt("1")
         winsound.PlaySound('music/two.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
         characterDialogue("[SYSTEM]", "WHITE", "[18:09] STARTUP: Audio Systems enabled", 0, 2)
@@ -520,14 +520,14 @@ _________   _...._      |   |             _..._         __.....__               
 while True:
     splash()
     print("EPISODE SELECTION")
-    print("[0] - 'Hello, WORLD'")
+    print("[0] - PROLOGUE")
     print("\nADDITIONAL STUFF")
     print("[s] - Adjust Settings")
     print("[e] - Exit")
     command = input("> ")
-    if command == "1":
+    if command == "0":
        os.system('cls')
-       Episode(1)
+       Episode(0)
        break
     elif command == "s":
         while True:
