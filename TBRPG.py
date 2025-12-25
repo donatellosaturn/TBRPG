@@ -35,7 +35,16 @@ keyboard.release('ctrl')
 
 friendShip = {
     "FATHER":0,
-    "ZACHARY":0
+    "SCOT":0,
+    "BRYNNE":0,
+    "MILO":0,
+    "GARRETT":0,
+    "DAKOTA":0,
+    "HEATHER":0,
+    "JADEN":0,
+    "CASEY":0,
+    "EVEREST":0,
+    "JAYE":0
 }
 
 class bcolors:
@@ -718,9 +727,47 @@ def Episode(episodeNumber):
                 os.system('cls')
                 winsound.PlaySound('ambient/VHS.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
                 characterDialogue("FATHER", "BLACK", "I'm not good enough to be a dad.")
-                wait()
-
-
+                wait()  
+            break
+        
+        #PART 3 [Introduction of One of the characters]
+        winsound.PlaySound('ambient/VHS.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+        characterDialogue("???", "PURPLE", "Hello...! Dakota to Earth, I repeat, Captain Alex Dakota to Earth!!!")
+        wait()
+        characterDialogue("Dakota", "PURPLE", "Agh... the stupid Artificial Intelligence software isn't ready yet.")
+        wait()
+        characterDialogue("Dakota", "PURPLE", "Not like we needed it, ugh.")
+        wait()
+        characterDialogue("Dakota", "PURPLE", "[Audible footsteps]")
+        wait()
+        characterDialogue("???", "BLUE", "Howdy Captain...! What do you...? Uh... What's the problem?")
+        wait()
+        characterDialogue("Dakota", "PURPLE", "Aye, er, Scot... I got a problem...")
+        wait()
+        characterDialogue("Scot", "BLUE", "Yeah... well... I figured.")
+        characterDialogue("Scot", "BLUE", "...Seeing as you left the cockpit for the first time in days.")
+        wait()
+        winsound.PlaySound('ambient/VHS.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+        characterDialogue("Dakota", "PURPLE", "I'm not a really big... uh... tech guy... y'know? And... uh... the AI panel that the space group arranged for us ain't ready yet.")
+        wait()
+        characterDialogue("Scot", "BLUE", "There's... nothing really I can do. All we really can do is wait.")
+        wait()
+        characterDialogue("Dakota", "PURPLE", "Scot, just make sure nothing breaks, okay?")
+        wait()
+        characterDialogue("Scot", "BLUE", "Aye aye, captain.")
+        wait()
+        winsound.PlaySound('music/4a.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+        characterDialogue("Dakota", "PURPLE", "[AUDIBLE FOOTSTEPS, SLOWLY GETTING QUIETER OVER TIME]")
+        wait()
+        characterDialogue("Scot", "BLUE", "Knowing him, something probably broke already. Huh.")
+        wait()
+        characterDialogue("Scot", "BLUE", "...I'd better get Heather to help me out with this.")
+        wait()
+        characterDialogue("Scot", "BLUE", "...and this leaves Amity to do the maintenance.")
+        wait()
+        characterDialogue("Scot", "BLUE", "I think she can handle that..")
+        wait()
+        
  
 #Splash 
 def splash():
