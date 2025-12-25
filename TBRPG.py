@@ -4,10 +4,52 @@
 #(all the OSTs and whatnot)
 
 import os
-
+print("""                                                                                                                                     
+       ;:x+:                                                        ;+;;;++:                                                         
+       ;:x+::                      +xx+                             ;+;;;;+:                                                         
+       ;:x;+;:                     ;++:                             ;+;;;;+:                                                         
+       ::x;;+;:                    :++:            &&&              ;+;;;++:                                 &                       
+       ::x;;;++++++;;;;:;          :+;:           &&X$&             ;+;;;++.                                &&X                      
+       ::+;;;;;;;+++++++++++++:::::++;:          &$xxx$&            ;+;;;;+:                               &$x&                      
+        :x+;;;;;;;;;;;;;;;;;;++++++++;:         &&xxxxxX&:          ;+;;;+++                             &&X+x&X                     
+        :++;;;;++++++++++++;;;;;;;;;;+;        &&x++xxxxX&&         ;+;;;;;x                            &&x+xX$&                     
+         ;x++++;+         ++++++;;;;;;+++     +&x+++++xxxx$&       :+;;;;;;++                         &$XxxXXxX&                     
+                                ++++;;;;+++:  &X++xxx++++xxX&&X    ;+;;;;;;;++                     &&$X:+&XXxxX&                     
+                                   ++++;;;++.&$+xxxxxxxx+++xxX&&&+ +;;;;;;;;;++      &&&&&&&&&&&&&Xx$$$&:$xxxxX&                     
+                                      +++;+: &+++xxxxxxxxx++++++&& +;;;;;;;;;;+x   &&$x+++++++++++;$&$$&.&xxxxX&                     
+                                         ++..&x+xxxxxxxxxxxxxxxx&  +;;;;;;;;;++;  x$+xxxxxxxxxxxxx+;X$x:.&xxxxX&                     
+                                          +.;&++xxxxxxxxxxxxxxxxx  :;+++++++:   $&$xxxxxxxxxxxxxxx++;;;+;$xxxxX&                     
+                                           ..&xxxxxxxxxxxxxxxxxx$&&:         &&&&&xxxxxxxxxxxxxxxxxxxxx;+$xxxx&&                     
+                             x             .+&+xxxxxxxxxxxxxxxxxxx&&&&++&&&&&    X&Xxxxxxxxxxxxxxxxxxx+;XXxxxX&                      
+                             x&&&&&&&        Xxxxxxxxxxxxxxxxxxxx$&   . &$xX&&.:. .&Xxxxxxxxxxxxxxxxx+;+$XxxX&&                      
+                              +&XxxxX$&&&&&&$XxxxxxxxxxxxxxxxxX$&& .;;; +&&X:       &xxxxxxxxxxxxxxx+;x$Xxx$&&                       
+                               +&X++++++++++++xxxxxxxxxX&&$xx$&  . ;;.     &$&&&&&& +Xxxxxxxxxx++++;:$$XX$&&                         
+                                 &$x+xxxxxxxxxxxxxxxxxx&  X&&X  &     &&&& &&Xxxxx&X &xxxx+++++++;:+$$&&&&                           
+                                  &&x++xxxxxxxxxxxxxxx&+ ;+&  $&&+ &&&&Xx$&  &$xxx&; &X&&Xxx;;;xX$&&&&;                              
+                                   +&&X+xxxxxxxxxxxxxX&     $&&++$  &&xxxx$&X Xxx$& &&   :&&&&&&&&&                                  
+                                     +&&Xxxxxxxxxxxxx&+ X&    &$&&X: ;&&&Xxx&&$&&&    &&xX                                           
+                                         &&&&&$xxxxxX&   &&&&  &&X&&&&  ;&&&&&&+    .$xx&&&&$:                                       
+                                              XxxxxX&    &&$&& X&$&&   &&;       x&&&$x  ++x$&&&&:                                   
+                                             &$xxx$&: ;&&  Xx&$ &$  &&&   ....X&&&&&&x&&:  $$$+                                      
+                                            +$xx$&$   &&$&&x$&x &$&&&$&&X :;;:.   :&XX$  : & &                                       
+                                           x&&&$.  &&; ;&&&&&  +&xxxxxx$&.     .:.  +& .::                                           
+                                       &&&      X&$XX$&X      &&Xxxxxxxx$& &&&           $                                           
+                                       +&&&&&$&&&&+xxxX&&& +&&&&&xxxxxxxx& &&&&& &&&   &&&                                           
+                                         &&X$$:..;+xX&&. &&:    &xxxxxxxx& &&&&&&&&  $&Xx&                                           
+                                          &&$X$X:;X&&  +   .;+: &xxxxxxxX& &&&&&&   &$++X&;.                                         
+                                            &&&&&&&   :;;++;;+  &xxxxxxx&& &&&    ;&+;$& &X                                          
+                                              $&&.  +++;;;;;+; &$xxxxxx$&     &+ &$$&&&&  x&                                         
+                                                  ;+;;;;;;;;+ .&xxxxxX$&;   . . &&&&.   && &::xx.x                                   
+                                               +;+++;;;;;;;+. &&xxX$&&&  ;$&+.X     :&&&&&&& +;  $XX$&&&$x                           
+                                                  :++++;;;+; &&&&&&&   x$$xX+ +; &;;&$Xxx&& .+ :$+++++++xxX$&&:                      
+                                                     :;++x; &&&x    +$Xx+;;+$ .X  &&$xxX&& .+ :$x+++++++++++X+.                      
+                                                                 ::$+;;;;++;x$ :+ X&xxX&&; + :Xx+++;++++++++$.                       
+                                                                 :.$+++++++++X; +  &xxX+  +.:$x++++;++++++++&                        
+                                                                 ; $x++++++++xX;. ;&xxX&: . Xx+++++;++++++++&     """)
+print("GAME BY LOCKE")
+time.sleep(3)
 import winsound
 #winsound.PlaySound('one.wav', winsound.SND_FILENAME)
-winsound.PlaySound('music/one.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
 
 
 #requires python 3.9 to test properly
@@ -771,6 +813,7 @@ def Episode(episodeNumber):
         characterDialogue("Scot", "BLUE", "I think she can handle that..")
         wait()
         winsound.PlaySound('music/4b.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+        os.system('cls')
         print("""░▒▓████████▓▒░▒▓███████▓▒░░▒▓█▓▒░░▒▓███████▓▒░░▒▓██████▓▒░░▒▓███████▓▒░░▒▓████████▓▒░      ░▒▓████████▓▒░ 
 ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░ 
 ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░ 
@@ -834,6 +877,7 @@ _________   _...._      |   |             _..._         __.....__               
                                                        .                 """)
 
 def mainMenu():
+    winsound.PlaySound('music/one.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
     while True:
         splash()
         print("EPISODE SELECTION")
