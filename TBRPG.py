@@ -16,7 +16,6 @@ import sys
 
 os.system('cls')
 
-
 import keyboard
 keyboard.press('f11')
 counter = 12
@@ -26,42 +25,9 @@ while counter != 0:
 
 keyboard.release('ctrl')
 os.system('cls')
-print("""                                                                                                                                               
-       ::+;;;;;;;+++++++++++++:::::++;:          &$xxx$&            ;+;;;;+:                               &$x&                      
-        :x+;;;;;;;;;;;;;;;;;;++++++++;:         &&xxxxxX&:          ;+;;;+++                             &&X+x&X                     
-        :++;;;;++++++++++++;;;;;;;;;;+;        &&x++xxxxX&&         ;+;;;;;x                            &&x+xX$&                     
-         ;x++++;+         ++++++;;;;;;+++     +&x+++++xxxx$&       :+;;;;;;++                         &$XxxXXxX&                     
-                                ++++;;;;+++:  &X++xxx++++xxX&&X    ;+;;;;;;;++                     &&$X:+&XXxxX&                     
-                                   ++++;;;++.&$+xxxxxxxx+++xxX&&&+ +;;;;;;;;;++      &&&&&&&&&&&&&Xx$$$&:$xxxxX&                     
-                                      +++;+: &+++xxxxxxxxx++++++&& +;;;;;;;;;;+x   &&$x+++++++++++;$&$$&.&xxxxX&                     
-                                         ++..&x+xxxxxxxxxxxxxxxx&  +;;;;;;;;;++;  x$+xxxxxxxxxxxxx+;X$x:.&xxxxX&                     
-                                          +.;&++xxxxxxxxxxxxxxxxx  :;+++++++:   $&$xxxxxxxxxxxxxxx++;;;+;$xxxxX&                     
-                                           ..&xxxxxxxxxxxxxxxxxx$&&:         &&&&&xxxxxxxxxxxxxxxxxxxxx;+$xxxx&&                     
-                             x             .+&+xxxxxxxxxxxxxxxxxxx&&&&++&&&&&    X&Xxxxxxxxxxxxxxxxxxx+;XXxxxX&                      
-                             x&&&&&&&        Xxxxxxxxxxxxxxxxxxxx$&   . &$xX&&.:. .&Xxxxxxxxxxxxxxxxx+;+$XxxX&&                      
-                              +&XxxxX$&&&&&&$XxxxxxxxxxxxxxxxxX$&& .;;; +&&X:       &xxxxxxxxxxxxxxx+;x$Xxx$&&                       
-                               +&X++++++++++++xxxxxxxxxX&&$xx$&  . ;;.     &$&&&&&& +Xxxxxxxxxx++++;:$$XX$&&                         
-                                 &$x+xxxxxxxxxxxxxxxxxx&  X&&X  &     &&&& &&Xxxxx&X &xxxx+++++++;:+$$&&&&                           
-                                  &&x++xxxxxxxxxxxxxxx&+ ;+&  $&&+ &&&&Xx$&  &$xxx&; &X&&Xxx;;;xX$&&&&;                              
-                                   +&&X+xxxxxxxxxxxxxX&     $&&++$  &&xxxx$&X Xxx$& &&   :&&&&&&&&&                                  
-                                     +&&Xxxxxxxxxxxxx&+ X&    &$&&X: ;&&&Xxx&&$&&&    &&xX                                           
-                                         &&&&&$xxxxxX&   &&&&  &&X&&&&  ;&&&&&&+    .$xx&&&&$:                                       
-                                              XxxxxX&    &&$&& X&$&&   &&;       x&&&$x  ++x$&&&&:                                   
-                                             &$xxx$&: ;&&  Xx&$ &$  &&&   ....X&&&&&&x&&:  $$$+                                      
-                                            +$xx$&$   &&$&&x$&x &$&&&$&&X :;;:.   :&XX$  : & &                                       
-                                           x&&&$.  &&; ;&&&&&  +&xxxxxx$&.     .:.  +& .::                                           
-                                       &&&      X&$XX$&X      &&Xxxxxxxx$& &&&           $                                           
-                                       +&&&&&$&&&&+xxxX&&& +&&&&&xxxxxxxx& &&&&& &&&   &&&                                           
-                                         &&X$$:..;+xX&&. &&:    &xxxxxxxx& &&&&&&&&  $&Xx&                                           
-                                          &&$X$X:;X&&  +   .;+: &xxxxxxxX& &&&&&&   &$++X&;.                                         
-                                            &&&&&&&   :;;++;;+  &xxxxxxx&& &&&    ;&+;$& &X                                          
-                                              $&&.  +++;;;;;+; &$xxxxxx$&     &+ &$$&&&&  x&                                         
-                                                  ;+;;;;;;;;+ .&xxxxxX$&;   . . &&&&.   && &::xx.x                                   
-                                               +;+++;;;;;;;+. &&xxX$&&&  ;$&+.X     :&&&&&&& +;  $XX$&&&$x                           
-                                                  :++++;;;+; &&&&&&&   x$$xX+ +; &;;&$Xxx&& .+ :$+++++++xxX$&&:                      
-                                                     :;++x; &&&x    +$Xx+;;+$ .X  &&$xxX&& .+ :$x+++++++++++X+.                      
-                                                                 ::$+;;;;++;x$ :+ X&xxX&&; + :Xx+++;++++++++$.                       """)
-print("GAME BY LOCKE")
+
+os.system('cls')
+print("~ GAME BY LOCKE <3")
 
 time.sleep(3)
 os.system('cls')
