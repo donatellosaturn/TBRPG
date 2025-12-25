@@ -626,6 +626,7 @@ def Episode(episodeNumber):
            ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░          ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░        
            ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░          ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓██▓▒░ 
     ░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░   ░▒▓█▓▒░           ░▒▓██████▓▒░░▒▓█▓▒░▒▓██▓▒░ {bcolors.WHITE}""")
+                    print("\n")
                     looper -= 1
                 os.system('cls')
                 winsound.PlaySound('ambient/VHS.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
@@ -642,7 +643,9 @@ def Episode(episodeNumber):
 ░▒▓███████▓▒░░▒▓████████▓▒░      ░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░  ░▒▓██▓▒░  ░▒▓████████▓▒░▒▓█▓▒░ 
                                                                                                  ░▒▓█▓▒░  
                     {bcolors.WHITE}""")
+                    print("\n")
                     looper -= 1
+                os.system('cls')
                 winsound.PlaySound('ambient/VHS.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
                 characterDialogue("FATHER", "BLACK", "...")
                 characterDialogue("FATHER", "BLACK", "Goodbye, WORLD.")
@@ -651,6 +654,7 @@ def Episode(episodeNumber):
                 looper = 4096
                 winsound.PlaySound('sfx/ENLIGHTENMENT.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
                 while looper != 0:
+                    print("\n")
                     print(f"""{bcolors.RED}░▒▓████████▓▒░▒▓██████▓▒░░▒▓███████▓▒░       ░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓██████████████▓▒░         
 ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░         ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░        
 ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░         ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░        
@@ -661,6 +665,7 @@ def Episode(episodeNumber):
                                                                                                                  
                     {bcolors.WHITE}""")
                     looper -= 1
+                os.system('cls')
 
 
  
