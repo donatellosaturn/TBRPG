@@ -596,6 +596,71 @@ def Episode(episodeNumber):
                 characterDialogue("FATHER", "BLACK", "[COUGH] Please stop doin' that in my- [COUGH]- face...")
                 wait()
                 characterDialogue("BOSS", "GRAY", "[MUTTERING NOISES]", REST=2)
+                wait()
+                winsound.PlaySound('ambient/VHS.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+                characterDialogue("FATHER", "BLACK", "I hate him.", REST=2)
+                characterDialogue("FATHER", "BLACK", "I... [COUGH] ...HATE him.", REST=2)
+                wait()
+                characterDialogue("FATHER", "BLACK", "I'm sorry you had to see that, WORLD.")
+                wait()
+                characterDialogue("WORLD", "WHITE", "I'm okay.")
+                wait()
+                characterDialogue("FATHER", "BLACK", "...")
+                characterDialogue("FATHER", "BLACK", "Yeah.")
+                wait()
+                characterDialogue("FATHER", "BLACK", "Suppose things will turn out okay for me.")
+                wait()
+                winsound.PlaySound('ambient/VHS.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+                characterDialogue("FATHER", "BLACK", "I'm down here on Earth, after all.")
+                wait()
+                characterDialogue("FATHER", "BLACK", "I'm safe down here.")
+                wait()
+                characterDialogue("FATHER", "BLACK", "Away from the horrors of Neptune.", REST=1.5)
+                looper = 2048
+                winsound.PlaySound('sfx/SmellTheRoses.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+                while looper != 0:
+                    print(f"""{bcolors.BLUE} ░▒▓███████▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░  
+    ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░          ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ 
+    ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░          ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ 
+     ░▒▓██████▓▒░░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░          ░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░  
+           ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░          ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░        
+           ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░          ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓██▓▒░ 
+    ░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░   ░▒▓█▓▒░           ░▒▓██████▓▒░░▒▓█▓▒░▒▓██▓▒░ {bcolors.WHITE}""")
+                    looper -= 1
+                os.system('cls')
+                winsound.PlaySound('ambient/VHS.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+                characterDialogue("FATHER", "BLACK", "Away from the dread of Planet 9.")
+                looper = 2048
+                winsound.PlaySound('sfx/SmellTheRoses.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+                while looper != 0:
+                    print(f"""{bcolors.BLUE}░▒▓███████▓▒░░▒▓████████▓▒░      ░▒▓███████▓▒░░▒▓███████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░       
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░              
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒▒▓█▓▒░░▒▓█▓▒░              
+░▒▓███████▓▒░░▒▓██████▓▒░        ░▒▓███████▓▒░░▒▓███████▓▒░░▒▓████████▓▒░░▒▓█▓▒▒▓█▓▒░░▒▓██████▓▒░         
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▓█▓▒░ ░▒▓█▓▒░     ░▒▓██▓▒░ 
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▓█▓▒░ ░▒▓█▓▒░     ░▒▓██▓▒░ 
+░▒▓███████▓▒░░▒▓████████▓▒░      ░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░  ░▒▓██▓▒░  ░▒▓████████▓▒░▒▓█▓▒░ 
+                                                                                                 ░▒▓█▓▒░  
+                    {bcolors.WHITE}""")
+                    looper -= 1
+                winsound.PlaySound('ambient/VHS.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+                characterDialogue("FATHER", "BLACK", "...")
+                characterDialogue("FATHER", "BLACK", "Goodbye, WORLD.")
+                characterDialogue("FATHER", "BLACK", "Good Luck.")
+                characterDialogue("FATHER", "BLACK", "You're gonna need it.")
+                looper = 4096
+                winsound.PlaySound('sfx/ENLIGHTENMENT.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+                while looper != 0:
+                    print(f"""{bcolors.RED}░▒▓████████▓▒░▒▓██████▓▒░░▒▓███████▓▒░       ░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓██████████████▓▒░         
+░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░         ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░        
+░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░         ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░        
+░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░          ░▒▓█▓▒░   ░▒▓████████▓▒░▒▓██████▓▒░ ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░        
+░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░         ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░        
+░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░         ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓██▓▒░ 
+░▒▓█▓▒░      ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░         ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓██▓▒░ 
+                                                                                                                 
+                    {bcolors.WHITE}""")
+                    looper -= 1
 
 
  
