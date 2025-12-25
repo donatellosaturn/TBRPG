@@ -5,6 +5,29 @@
 
 import os
 import time
+import winsound
+#winsound.PlaySound('one.wav', winsound.SND_FILENAME)
+
+
+#requires python 3.9 to test properly
+import time
+import sys
+#requires pip install playsound==1.2.2
+
+os.system('cls')
+
+
+import keyboard
+keyboard.press('f11')
+counter = 12
+while counter != 0:
+    keyboard.press('ctrl+=')
+    counter -= 1
+
+
+
+keyboard.release('ctrl')
+
 print("""                                                                                                                                     
        ;:x+:                                                        ;+;;;++:                                                         
        ;:x+::                      +xx+                             ;+;;;;+:                                                         
@@ -49,28 +72,7 @@ print("""
                                                                  ; $x++++++++xX;. ;&xxX&: . Xx+++++;++++++++&     """)
 print("GAME BY LOCKE")
 time.sleep(3)
-import winsound
-#winsound.PlaySound('one.wav', winsound.SND_FILENAME)
 
-
-#requires python 3.9 to test properly
-import time
-import sys
-#requires pip install playsound==1.2.2
-
-os.system('cls')
-
-
-import keyboard
-keyboard.press('f11')
-counter = 12
-while counter != 0:
-    keyboard.press('ctrl+=')
-    counter -= 1
-
-
-
-keyboard.release('ctrl')
 #FRIENDSHIP LEVEL (COULD VARY DIALOGUE)
 #0 --> Neutral to you
 #100 --> Loves you
