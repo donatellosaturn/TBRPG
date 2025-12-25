@@ -306,6 +306,57 @@ def wait(firsttime=False):
 
 def Episode(episodeNumber):
     if episodeNumber == 0:
+        looper = 5096
+        winsound.PlaySound('sfx/SmellTheRoses.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+        while looper != 0:
+            print(f"\n")
+            print(f"""{bcolors.BLUE}░▒▓███████▓▒░░▒▓█▓▒░       ░▒▓██████▓▒░░▒▓███████▓▒░░▒▓████████▓▒░▒▓████████▓▒░       ░▒▓██████▓▒░  
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░         ░▒▓█▓▒░          ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░         ░▒▓█▓▒░          ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓███████▓▒░░▒▓█▓▒░      ░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓██████▓▒░    ░▒▓█▓▒░           ░▒▓███████▓▒░ 
+░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░         ░▒▓█▓▒░                 ░▒▓█▓▒░ 
+░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░         ░▒▓█▓▒░                 ░▒▓█▓▒░ 
+░▒▓█▓▒░      ░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░  ░▒▓█▓▒░           ░▒▓██████▓▒░                                                                                          
+            {bcolors.WHITE}""")
+            looper -= 1
+        time.sleep(1)
+        characterDialogue("TV", "NONE", "* SCIENTISTS HAVE RECENTLY DISCOVERED AN ", 0.1)
+        winsound.PlaySound('sfx/SmellTheRoses.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+        looper = 5096
+        while looper != 0:
+            print(f"\n")
+            print(f"""{bcolors.RED} ░▒▓██████▓▒░░▒▓███████▓▒░ ░▒▓██████▓▒░░▒▓██████████████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓█▓▒░    ░▒▓██████▓▒░  
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░     
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░     
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓█▓▒░
+            {bcolors.WHITE}""")
+            looper -= 1
+        print("* SCIENTISTS HAVE RECENTLY DISCOVERED AN", END=" ")
+        characterDialogue("TV", "NONE", "ANOMALY SOMEWHERE BEYOND NEPTUNE'S ORBIT.", 0.1)
+        wait()
+        characterDialogue("TV", "NONE", "THE GOVERNMENT OF AN ANONYMOUS COUNTRY HAS GRACIOUSLY DECIDED TO SEND 11 OF THEIR PEOPLE OUT TO THE STARS.")
+        wait()
+        characterDialogue("TV", "NONE", "THERE ARE STILL PREPARATIONS TO BE MADE BEFORE THE LAUNCH.")
+        wait()
+        characterDialogue("TV", "NONE", "FOR NOW, THOUGH, THE ONLY THING WE AT HOME CAN DO IS WISH THE MANY BRAVE INDIVIDUALS OUT THERE", REST=0)
+        wait()
+        winsound.PlaySound('sfx/SmellTheRoses.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+        looper = 5096
+        while looper != 0:
+            print(f"\n")
+            print(f"""{bcolors.BLUE}░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓███████▓▒░  
+░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓████████▓▒░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░
+            {bcolors.WHITE}""")
+            looper -= 1
+        time.sleep(3)
         #PROLOGUE
         asciiArt("1")
         winsound.PlaySound('music/two.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
@@ -858,9 +909,39 @@ def Episode(episodeNumber):
 
         mainMenu()
         
- 
+
+def episodeInfo(episodeNumber):
+    if episodeNumber == 0:
+        print("""░▒▓████████▓▒░▒▓███████▓▒░░▒▓█▓▒░░▒▓███████▓▒░░▒▓██████▓▒░░▒▓███████▓▒░░▒▓████████▓▒░      ░▒▓████████▓▒░ 
+░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓██████▓▒░ ░▒▓███████▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓██████▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓████████▓▒░▒▓█▓▒░      ░▒▓█▓▒░▒▓███████▓▒░ ░▒▓██████▓▒░░▒▓███████▓▒░░▒▓████████▓▒░      ░▒▓████████▓▒░ 
+                                                                                                          
+                                                                                                      """)
+        print("\n\n")
+        print("EPISODE 0: PROLOGUE")
+        print("\n")
+        print("Estimated Play Time: 5 min")
+        print("\n")
+        print("[b] - BEGIN EPISODE")
+        print("[r] - RETURN")
+
+        while True:
+            command = input("> ")
+
+            if command == "b":
+                os.system('cls')
+                Episode(0)
+                break
+            elif command == "r":
+                splash()
+                break
 #Splash 
 def splash():
+    os.system('cls')
     print("""                                                                                     .----.   
                         .---.                                                      .   _   \  
 _________   _...._      |   |             _..._         __.....__                 /  .' )   | 
@@ -901,9 +982,8 @@ def mainMenu():
         print("[e] - Exit")
         command = input("> ")
         if command == "0":
-           os.system('cls')
-           Episode(0)
-           break
+            episodeInfo(0)
+            break
         elif command == "s":
             while True:
                 print("[o] - ZOOM OUT")
