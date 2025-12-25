@@ -732,6 +732,7 @@ def Episode(episodeNumber):
         
         #PART 3 [Introduction of One of the characters]
         winsound.PlaySound('ambient/VHS.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+        os.system('cls')
         characterDialogue("???", "PURPLE", "Hello...! Dakota to Earth, I repeat, Captain Alex Dakota to Earth!!!")
         wait()
         characterDialogue("Dakota", "PURPLE", "Agh... the stupid Artificial Intelligence software isn't ready yet.")
@@ -747,6 +748,7 @@ def Episode(episodeNumber):
         characterDialogue("Scot", "BLUE", "Yeah... well... I figured.")
         characterDialogue("Scot", "BLUE", "...Seeing as you left the cockpit for the first time in days.")
         wait()
+        os.system('cls')
         winsound.PlaySound('ambient/VHS.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
         characterDialogue("Dakota", "PURPLE", "I'm not a really big... uh... tech guy... y'know? And... uh... the AI panel that the space group arranged for us ain't ready yet.")
         wait()
@@ -756,6 +758,7 @@ def Episode(episodeNumber):
         wait()
         characterDialogue("Scot", "BLUE", "Aye aye, captain.")
         wait()
+        os.system('cls')
         winsound.PlaySound('music/4a.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
         characterDialogue("Dakota", "PURPLE", "[AUDIBLE FOOTSTEPS, SLOWLY GETTING QUIETER OVER TIME]")
         wait()
@@ -767,6 +770,36 @@ def Episode(episodeNumber):
         wait()
         characterDialogue("Scot", "BLUE", "I think she can handle that..")
         wait()
+        winsound.PlaySound('music/4b.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
+        print("""░▒▓████████▓▒░▒▓███████▓▒░░▒▓█▓▒░░▒▓███████▓▒░░▒▓██████▓▒░░▒▓███████▓▒░░▒▓████████▓▒░      ░▒▓████████▓▒░ 
+░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓██████▓▒░ ░▒▓███████▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓██████▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓████████▓▒░▒▓█▓▒░      ░▒▓█▓▒░▒▓███████▓▒░ ░▒▓██████▓▒░░▒▓███████▓▒░░▒▓████████▓▒░      ░▒▓████████▓▒░ 
+                                                                                                          
+                                                                                                          """)
+        print("PROLOGUE")
+
+        print("CREDITS")
+        print("- Written by locke")
+        print("- Music by locke")
+
+        print("RESOURCES")
+        print("- Github")
+        print("- NASA")
+        print("- Python")
+        print("- ASCII Font Websites")
+        print("- ASCII Art Editors")
+
+        print("ADDITIONAL THANKS")
+        print("- Lucas [Support]")
+        print("- You [For Playing]")
+
+        wait()
+
+        mainMenu()
         
  
 #Splash 
@@ -800,46 +833,46 @@ _________   _...._      |   |             _..._         __.....__               
                                            .                                   
                                                        .                 """)
 
+def mainMenu():
+    while True:
+        splash()
+        print("EPISODE SELECTION")
+        print("[0] - PROLOGUE")
+        print("\nADDITIONAL STUFF")
+        print("[s] - Adjust Settings")
+        print("[e] - Exit")
+        command = input("> ")
+        if command == "0":
+           os.system('cls')
+           Episode(0)
+           break
+        elif command == "s":
+            while True:
+                print("[o] - ZOOM OUT")
+                print("[i] - ZOOM IN")
+                print("[r] - RETURN")
+                command = input("> ")
 
-while True:
-    splash()
-    print("EPISODE SELECTION")
-    print("[0] - PROLOGUE")
-    print("\nADDITIONAL STUFF")
-    print("[s] - Adjust Settings")
-    print("[e] - Exit")
-    command = input("> ")
-    if command == "0":
-       os.system('cls')
-       Episode(0)
-       break
-    elif command == "s":
-        while True:
-            print("[o] - ZOOM OUT")
-            print("[i] - ZOOM IN")
-            print("[r] - RETURN")
-            command = input("> ")
-
-            if command == "o":
-                keyboard.press('ctrl+-')
-                os.system('cls')
-                splash()
-                keyboard.release('ctrl')
-            elif command == "i":
-                keyboard.press('ctrl+=')
-                os.system('cls')
-                splash()
-                keyboard.release('ctrl')
-            elif command == "r":
-                os.system('cls')
-                break
-            else:
-                os.system('cls')
-                print("Invalid.")
-    elif command == "e":
-        exit(0)
-    else:
-        os.system('cls')
-        print("Invalid")
-                
-    
+                if command == "o":
+                    keyboard.press('ctrl+-')
+                    os.system('cls')
+                    splash()
+                    keyboard.release('ctrl')
+                elif command == "i":
+                    keyboard.press('ctrl+=')
+                    os.system('cls')
+                    splash()
+                    keyboard.release('ctrl')
+                elif command == "r":
+                    os.system('cls')
+                    break
+                else:
+                    os.system('cls')
+                    print("Invalid.")
+        elif command == "e":
+            exit(0)
+        else:
+            os.system('cls')
+            print("Invalid")
+                    
+mainMenu()     
