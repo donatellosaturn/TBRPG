@@ -4,6 +4,7 @@
 #(all the OSTs and whatnot)
 
 import os
+import time
 print("""                                                                                                                                     
        ;:x+:                                                        ;+;;;++:                                                         
        ;:x+::                      +xx+                             ;+;;;;+:                                                         
