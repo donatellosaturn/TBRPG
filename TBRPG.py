@@ -914,6 +914,7 @@ def Episode(episodeNumber):
 
 def episodeInfo(episodeNumber):
     if episodeNumber == 0:
+        os.system('cls')
         print("""░▒▓████████▓▒░▒▓███████▓▒░░▒▓█▓▒░░▒▓███████▓▒░░▒▓██████▓▒░░▒▓███████▓▒░░▒▓████████▓▒░      ░▒▓████████▓▒░ 
 ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░ 
 ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░ 
@@ -939,7 +940,7 @@ def episodeInfo(episodeNumber):
                 Episode(0)
                 break
             elif command == "r":
-                splash()
+                mainMenu()
                 break
 #Splash 
 def splash():
