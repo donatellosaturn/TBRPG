@@ -319,6 +319,7 @@ def Episode(episodeNumber):
 ░▒▓█▓▒░      ░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░  ░▒▓█▓▒░           ░▒▓██████▓▒░                                                                                          
             {bcolors.WHITE}""")
             looper -= 1
+        os.system('cls')
         time.sleep(1)
         characterDialogue("TV", "NONE", "* SCIENTISTS HAVE RECENTLY DISCOVERED AN ", 0.1)
         winsound.PlaySound('sfx/SmellTheRoses.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
@@ -334,8 +335,9 @@ def Episode(episodeNumber):
 ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓█▓▒░
             {bcolors.WHITE}""")
             looper -= 1
-        print("* SCIENTISTS HAVE RECENTLY DISCOVERED AN", END=" ")
-        characterDialogue("TV", "NONE", "ANOMALY SOMEWHERE BEYOND NEPTUNE'S ORBIT.", 0.1)
+        os.system('cls')
+        print("* SCIENTISTS HAVE RECENTLY DISCOVERED AN ANOMALY", END=" ")
+        characterDialogue("TV", "NONE", "SOMEWHERE BEYOND NEPTUNE'S ORBIT.", 0.1)
         wait()
         characterDialogue("TV", "NONE", "THE GOVERNMENT OF AN ANONYMOUS COUNTRY HAS GRACIOUSLY DECIDED TO SEND 11 OF THEIR PEOPLE OUT TO THE STARS.")
         wait()
