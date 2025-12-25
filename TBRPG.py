@@ -190,6 +190,48 @@ def asciiArt(art="None"):
          .       ..       
                   .       {bcolors.WHITE}""")
         #ALSO MADE BY ME
+    elif art == "6":
+        print(f"""{bcolors.GREEN}                                                                                                       
+                                                                                                      
+                          :.                  -   =                  .   ..-%@@@@@@@@@@@@@@@@@@@@@@%%#
+               .-.  .     :=:       .     *@. * .:++. .*@     .::::--:-=+:+-+@@@@@@@@@@@@@@@@@@@@@@@@@
+  :..          .@= .:-@.  =*:    .       .-@-.   -@@@  -@=..::::::-:-@@@=@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  :#       :     .. +.@   .: :      .     .:@@   ..@@@- :@ --@@+-.+#=@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                   .   .  :*#%            .:+@::  --=%@@=.@-.%@@@.:=+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+             =@@      -@-  .*#.          .+@..=@+..#%@@@@- @#:%@@@@@@=@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#
+                 .-    .   :=   @. .@   .-#@:*:..:--%@@@@@@@@=--+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%
+                           =@   :: =@ - @@+=.@@ .-:@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%+
+              :            :*.     ..::#=:@@.*#-=@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@##*
+               .==:         :   .  +=@@@@*=@@@-.-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%@++
+               :==               -..+*@%#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*.=#+
+                -   -:=           ..--=+=@#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#:---
+                   :   : -     : ..:=*==-#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@=**--
+              .   :#:   ...    +  ..+%+@#+-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*+@@@@@@@@+#*+==
+                  .  . -*     :-%-.-==-=*#@+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*=@#%#*#%%*:.===
+             -#  -%=.-%@=+:.     -..@%.+*%=@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#*-+**%*+=+*+*++=:
+             #:.=@:-.-%**.   %@%  .@@@@--#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*%@%%%*+*#**##==#+*+::.-
+             .##@%%=+#**.= ..#%=.. .+@@#+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@==*@@##%#+**-=++==+#-=====+
+               -@: ... :@@   -. @   =@@*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-:=+#=#%*++:..--=:+:*#+.-+*
+   ..          :+@@-:.:= :=.+@+    ..:@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@+==##*+#***+-:=*===+++++++*=
+  .             :+:: ## :#       :=.:-+@@@@@@@@@@@@@@@@@@@####***#*###%@**+**%*=#+==-**==*=:--*++==:#@
+              *::-  .   =     :=.  -+*-.+=@@#@@@@@%@@@@@@@@%##*#+=**=++**#*%%%**#*++=*++  .-=%%+-+*%@@
+               . .+::.  -.  ..   +#%*--+::=:=*@@@%##@%%@%%@%%@%#+==-=++=++#@#++++*==+==::-+-+#++#%%@@@
+                           :*:  +#==*++%%%@#%@%%%%%%%%@%%#**+%###+*=-:-=#++#*####+*===:.#@%%%%@%%%*%@%
+                     .:.  -  ...=+   :.+++*%%#@+%%%%@%%%#*++++%#%*#=-:==--++=**+==#**:-%%##%%%#%%#%@%=
+  .                      .-++= . *::. :#*=--+#@#%*##%%@%%%+==+*++++=-----::=%%#=+=::+%%%%+%@%%%@@%@%%@
+                      :.  =@.  :.=*-:=*++=-..:=++=-:=+#+*#**=*+:.:::==.:-:::*###++#%@%##%@@@@@%@@%@%#+
+                          =+-%%*+@*-:=== .:  .. .::=+**%%+%*=--:  . ..:::-:*%*-+*%@@%%%##*%%%%%%%%@+-*
+                         #@@*:. -@%+-=..=.    .. :.:===+%%+--:..::    :  .--=#%%@@%%+##*%%%%#++#**%%#%
+           :.             =@@=%#@*-==-:.       .. :--* -===*=.    .      .-+@%@@@@%+%##=+*#%%%@#*+#=+*
+              .  .     :.  -++= :#*-            -=-   -#%*++=         . :+#%%%@@%*=-==*=-=-+=+#%%%@###
+    .                .   :.       ::         .:. ..*:-::*++::.        .: .=##%##*-#%#*#=+==-::@%@#*=%#
+    .             :                             .:  -. :**=.:=          .%@=@@%@**+=..::--=#%@##@@@@@#
+  ..                                                  .:---:            ::::=-=+-+-..++:-*#+*%@*=%@@@@
+                                                          :..           .+%@@@***#%%@%+##+:%@%--=*@@@@
+                                                         .:..           ..=%#+-.:-:.:-+##==#+=%%=#*%@@
+                                                       ..:.             :-+#=: .:      .:.  .:*++=-.:*
+                                                                                                      
+                                                                                                      {bcolors.WHITE}""")
     else:
         print(" ")
 
@@ -414,9 +456,12 @@ def Episode(episodeNumber):
             asciiArt("3")
             characterDialogue("FATHER", "BLACK", "This... this is Earth. I'm here right now.", 0.02)
             wait()
+            asciiArt("6")
             characterDialogue("WORLD", "WHITE", "Am I there, on Earth, with you?", 0.05)
+            characterDialogue("WORLD", "WHITE", "Earth is... beautiful from here.", 0.05)
             wait()
-            characterDialogue("FATHER", "BLACK", "No, you dolt. I already told you- you're on a network. Right now, you're somewhere near... Saturn I'd say.", 0.05)
+            asciiArt("3")
+            characterDialogue("FATHER", "BLACK", "No, WORLD. I already told you- you're on a network. Right now, you're somewhere near... Saturn I'd say.", 0.05)
             wait()
             characterDialogue("WORLD", "WHITE", "...Saturn?", REST=0)
             winsound.PlaySound('ambient/SATURN.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
@@ -425,9 +470,9 @@ def Episode(episodeNumber):
             wait()
             characterDialogue("WORLD", "WHITE", "It's really pretty, though-", REST=0)
             wait()
-            characterDialogue("FATHER", "BLACK", "Yes, yes, Saturn is a LOVELY planet and all that, but that's not where you'll be stationed.", 0.025)
+            characterDialogue("FATHER", "BLACK", "Yes, yes, Saturn is a LOVELY planet and all that- it's everyone's FAVORITE! ...but that's not where you'll be stationed.", 0.025)
             wait()
-            characterDialogue("FATHER", "BLACK", "Like I said, you'll be stationed somewhere near Neptune, and I mean that.")
+            characterDialogue("FATHER", "BLACK", "Like I said, you'll be stationed somewhere near Neptune, and I meant that.")
             wait()
             winsound.PlaySound('ambient/NEPTUNE.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
             asciiArt("5")
@@ -450,7 +495,7 @@ def Episode(episodeNumber):
                 characterDialogue("WORLD", "WHITE", "It's ...beautiful.", REST=3)
                 wait()
                 friendShip["FATHER"] += 10;
-                characterDialogue("FATHER", "BLACK", "I'm glad you feel that way, WORLD.")
+                characterDialogue("FATHER", "BLACK", "I'm very glad you feel that way, WORLD.")
                 wait()
                 characterDialogue("FATHER", "BLACK", "My... my grandpa, or as I called him, 'pops', always loved Neptune. I first found out about this love at an astronomy museum.")
                 wait()
@@ -739,7 +784,7 @@ def Episode(episodeNumber):
         os.system('cls')
         characterDialogue("???", "PURPLE", "Hello...! Dakota to Earth, I repeat, Captain Alex Dakota to Earth!!!")
         wait()
-        characterDialogue("Dakota", "PURPLE", "Agh... the stupid Artificial Intelligence software isn't ready yet.")
+        characterDialogue("Dakota", "PURPLE", "Agh... the stupid Artery Intewhatsit software isn't ready yet.")
         wait()
         characterDialogue("Dakota", "PURPLE", "Not like we needed it, ugh.")
         wait()
@@ -754,9 +799,15 @@ def Episode(episodeNumber):
         wait()
         os.system('cls')
         winsound.PlaySound('ambient/VHS.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
-        characterDialogue("Dakota", "PURPLE", "I'm not a really big... uh... tech guy... y'know? And... uh... the AI panel that the space group arranged for us ain't ready yet.")
+        characterDialogue("Dakota", "PURPLE", "I'm not a really big... uh... tech guy... y'know? And... uh... the Arby Indivisibilient panel that the space group arranged for us ain't ready yet.")
         wait()
-        characterDialogue("Scot", "BLUE", "There's... nothing really I can do. All we really can do is wait.")
+        characterDialogue("Scot", "BLUE", "Okay, uh, first- ", REST=0.25)
+        characterDialogue("Scot", "BLUE", "It's not 'Arby Indivisbilient'")
+        characterDialogue("Scot", "BLUE", "It's Artificial Intelligence.", 0.1)
+        wait()
+        characterDialogue("Dakota", "PURPLE", "Yup, yup, Accordion Incompetence.")
+        wait()
+        characterDialogue("Scot", "BLUE", "[AUDIBLE SIGH] ... Second... there's... nothing really I can do. All we really can do is wait.")
         wait()
         characterDialogue("Dakota", "PURPLE", "Scot, just make sure nothing breaks, okay?")
         wait()
@@ -797,6 +848,7 @@ def Episode(episodeNumber):
         print("- Python")
         print("- ASCII Font Websites")
         print("- ASCII Art Editors")
+        print("- Image to ASCII")
 
         print("ADDITIONAL THANKS")
         print("- Lucas [Support]")
