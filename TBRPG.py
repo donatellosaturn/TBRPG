@@ -24,10 +24,8 @@ while counter != 0:
     keyboard.press('ctrl+=')
     counter -= 1
 
-
-
 keyboard.release('ctrl')
-
+os.system('cls')
 print("""                                                                                                                                     
        ;:x+:                                                        ;+;;;++:                                                         
        ;:x+::                      +xx+                             ;+;;;;+:                                                         
