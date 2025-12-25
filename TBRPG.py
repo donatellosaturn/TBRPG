@@ -291,7 +291,7 @@ def Episode(episodeNumber):
         characterDialogue("[SYSTEM]", "YELLOW", "[18:12] WARNING: Error Bypass Used. Certain features may", 0, 0)
         os.system('cls')
         winsound.PlaySound('sfx/ENLIGHTENMENT.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
-        looper = 1080
+        looper = 2048
         while looper != 0:
             print(f"{bcolors.FLASHBANG}\n")
             print(f"""{bcolors.BLACK}░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░  
