@@ -336,7 +336,7 @@ def Episode(episodeNumber):
             {bcolors.WHITE}""")
             looper -= 1
         os.system('cls')
-        print("* SCIENTISTS HAVE RECENTLY DISCOVERED AN ANOMALY", end=" ")
+        print("* SCIENTISTS HAVE RECENTLY DISCOVERED AN ANOMALY", end="")
         characterDialogue("TV", "NONE", "SOMEWHERE BEYOND NEPTUNE'S ORBIT.", 0.1)
         wait()
         characterDialogue("TV", "NONE", "THE GOVERNMENT OF AN ANONYMOUS COUNTRY HAS GRACIOUSLY DECIDED TO SEND 11 OF THEIR PEOPLE OUT TO THE STARS.")
@@ -344,7 +344,6 @@ def Episode(episodeNumber):
         characterDialogue("TV", "NONE", "THERE ARE STILL PREPARATIONS TO BE MADE BEFORE THE LAUNCH.")
         wait()
         characterDialogue("TV", "NONE", "FOR NOW, THOUGH, THE ONLY THING WE AT HOME CAN DO IS WISH THE MANY BRAVE INDIVIDUALS OUT THERE", REST=0)
-        wait()
         winsound.PlaySound('sfx/SmellTheRoses.wav', winsound.SND_ASYNC | winsound.SND_ALIAS )
         looper = 5096
         while looper != 0:
@@ -358,6 +357,7 @@ def Episode(episodeNumber):
 ░▒▓████████▓▒░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░
             {bcolors.WHITE}""")
             looper -= 1
+        os.system('cls')
         time.sleep(3)
         #PROLOGUE
         asciiArt("1")
