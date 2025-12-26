@@ -336,7 +336,7 @@ def Episode(episodeNumber):
             {bcolors.WHITE}""")
             looper -= 1
         os.system('cls')
-        print("* SCIENTISTS HAVE RECENTLY DISCOVERED AN ANOMALY", END=" ")
+        print("* SCIENTISTS HAVE RECENTLY DISCOVERED AN ANOMALY", end=" ")
         characterDialogue("TV", "NONE", "SOMEWHERE BEYOND NEPTUNE'S ORBIT.", 0.1)
         wait()
         characterDialogue("TV", "NONE", "THE GOVERNMENT OF AN ANONYMOUS COUNTRY HAS GRACIOUSLY DECIDED TO SEND 11 OF THEIR PEOPLE OUT TO THE STARS.")
