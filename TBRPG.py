@@ -18,7 +18,7 @@ os.system('cls')
 
 import keyboard
 keyboard.press('f11')
-counter = 12
+counter = 8
 while counter != 0:
     keyboard.press('ctrl+=')
     counter -= 1
@@ -942,6 +942,34 @@ def episodeInfo(episodeNumber):
             elif command == "r":
                 mainMenu()
                 break
+    elif episodeNumber == 1:
+        os.system('cls')
+        print("""░▒▓████████▓▒░▒▓███████▓▒░░▒▓█▓▒░░▒▓███████▓▒░░▒▓██████▓▒░░▒▓███████▓▒░░▒▓████████▓▒░         ░▒▓█▓▒░ 
+░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓████▓▒░ 
+░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░                ░▒▓█▓▒░ 
+░▒▓██████▓▒░ ░▒▓███████▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓██████▓▒░           ░▒▓█▓▒░ 
+░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░                ░▒▓█▓▒░ 
+░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░                ░▒▓█▓▒░ 
+░▒▓████████▓▒░▒▓█▓▒░      ░▒▓█▓▒░▒▓███████▓▒░ ░▒▓██████▓▒░░▒▓███████▓▒░░▒▓████████▓▒░         ░▒▓█▓▒░ 
+                                                                                                      
+                                                                                                      """)
+        print("\n\n")
+        print("EPISODE 1: (EPISODE NAME TBD)")
+        print("\n")
+        print("Estimated Play Time: xx min")
+        print("\n")
+        print("[b] - BEGIN EPISODE")
+        print("[r] - RETURN")
+
+        while True:
+            command = input("> ")
+
+            if command == "b":
+                os.system('cls')
+                Episode(1)
+                break
+            elif command == "r":
+                mainMe
 #Splash 
 def splash():
     os.system('cls')
@@ -980,12 +1008,16 @@ def mainMenu():
         splash()
         print("EPISODE SELECTION")
         print("[0] - PROLOGUE")
+        print("[1] - TBD")
         print("\nADDITIONAL STUFF")
         print("[s] - Adjust Settings")
         print("[e] - Exit")
         command = input("> ")
         if command == "0":
             episodeInfo(0)
+            break
+        elif command == "1":
+            episodeInfo(1)
             break
         elif command == "s":
             while True:
